@@ -6,17 +6,17 @@
     padding: 0;
 }
 
-#tmain {
-    text-decoration: none;
-}
 .logo{
     position: absolute;
     left: 20px;
     top: 20px;
     height: 150px;
     width: 20%;
-    float: left;
-   
+    float: left;  
+}
+
+#tmain {
+    text-decoration: none;
 }
 .title{
     position: absolute;
@@ -38,9 +38,8 @@
 .title h2{
     font-size:15px;
     color: rgb(1, 110, 182);
-   
+}  
 
-}
 .navbar{
    
     position:absolute;
@@ -77,10 +76,4 @@
     color:rgb(135, 252, 246);
     text-shadow: 0 0 2px rgb(135, 255, 249), 0 0 8px rgb(135, 255, 249);
     font-size: 18px;
-}
-
-.icon {
-    position: absolute;
-    top: 100px;
-
 }
