@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Zilla Slab');
 * {
-    /* background-color: rgb(208, 252, 252); */
+    
     font-family: 'Zilla Slab';
     margin: 0;
     padding: 0;
@@ -17,7 +17,7 @@
 .title{
     position: absolute;
     left: 110px;
-    top: 34px;
+    top: 37px;
     align-items: center;
     height: 80px;
     width: 27%;
@@ -38,8 +38,9 @@
 
 }
 .navbar{
+   
     position:absolute;
-    top: 10px;
+    top: 25px;
     right: 0px;
     display: flex;
     justify-content: right;
@@ -51,15 +52,31 @@
     display: inline;
     justify-content: center;
     align-items: center;
+   
 }
 
 .navbar ul li {
     list-style: none;
     padding: 20px;
     display: inline;
+    
 }
-.navbar ul li a{
+.navbar ul li a {
     color: rgb(1, 110, 182);
     font-size: 15px;
-    
+    text-decoration: none;
+    transition: 0.2s;
+    cursor: default;
+
+}
+.navbar ul li a:hover{
+    color:rgb(135, 252, 246);
+    text-shadow: 0 0 2px rgb(135, 255, 249), 0 0 8px rgb(135, 255, 249);
+    font-size: 18px;
+}
+
+.icon {
+    position: absolute;
+    top: 100px;
+
 }
