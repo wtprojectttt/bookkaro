@@ -88,13 +88,18 @@
     border: 5px solid;
     margin: auto;
     width: 70%;
-    padding: 10px;
+    padding: 20px;
     background-color: aqua;
     margin-top: 120px;
+
+}
+.trip{
+    float: left;
 }
 
-.booking p {
-    margin: auto;
-    margin-right: 0px;
-}
 
+.ahh{
+    position: absolute;
+    right: 20%;
+    float: right;
+}
