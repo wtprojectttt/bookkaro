@@ -1,0 +1,100 @@
+* {
+    
+    font-family: 'Zilla Slab';
+    margin: 0;
+    padding: 0;
+}
+
+#tmain {
+    text-decoration: none;
+}
+.logo{
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    height: 150px;
+    width: 20%;
+    float: left;
+   
+}
+.title{
+    position: absolute;
+    left: 110px;
+    top: 37px;
+    align-items: center;
+    height: 80px;
+    width: 27%;
+    /* background-color: aquamarine; */
+    float: left;
+}
+
+.title h1{
+    font-size:20px;
+    color: rgb(1, 110, 182);
+    font-family: 'Zilla Slab';
+}
+
+.title h2{
+    font-size:15px;
+    color: rgb(1, 110, 182);
+   
+
+}
+.navbar{
+   
+    position:absolute;
+    top: 25px;
+    right: 0px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+
+
+}
+.navbar ul{
+    display: inline;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.navbar ul li {
+    list-style: none;
+    padding: 20px;
+    display: inline;
+    
+}
+.navbar ul li a {
+    color: rgb(1, 110, 182);
+    font-size: 15px;
+    text-decoration: none;
+    transition: 0.2s;
+    cursor: default;
+
+}
+.navbar ul li a:hover{
+    color:rgb(135, 252, 246);
+    text-shadow: 0 0 2px rgb(135, 255, 249), 0 0 8px rgb(135, 255, 249);
+    font-size: 18px;
+}
+
+.icon {
+    position: absolute;
+    top: 100px;
+
+}
+
+.booking {
+    border: 5px solid;
+    margin: auto;
+    width: 70%;
+    padding: 10px;
+    background-color: aqua;
+    margin-top: 120px;
+}
+
+.booking p {
+    margin: auto;
+    margin-right: 0px;
+}
+
