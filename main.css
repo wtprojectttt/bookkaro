@@ -120,6 +120,10 @@
     top: 35px;
     left: 400px;
 }
+.train:hover .over{
+    opacity: 0.8;
+
+}
 
 .bus{
     position: absolute;
@@ -128,8 +132,16 @@
     box-shadow:  0 0 2px rgb(0, 0, 0), 0 0 8px rgb(0, 0, 0);
 
 }
+.bus:hover .over{
+    opacity: 0.8;
+
+}
 .cab{
     position: absolute;
     left: 400px;
     top: 250px;
+}
+.cab:hover .over{
+    opacity: 0.8;
+
 }
