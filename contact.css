@@ -4,6 +4,7 @@
     font-family: 'Zilla Slab';
     margin: 0;
     padding: 0;
+    color: rgb(1, 110, 182);
 }
 
 .logo{
@@ -76,4 +77,57 @@
     color:rgb(135, 252, 246);
     text-shadow: 0 0 2px rgb(135, 255, 249), 0 0 8px rgb(135, 255, 249);
     font-size: 18px;
+}
+
+.email{
+   position: absolute;
+    left: 10px;
+}
+.email i{
+    position: absolute;
+    top: 0px
+}
+.phone{
+    position: absolute;
+    top: 400px;
+}
+
+.line{
+    height: 2px;
+    width: 100%;
+    background-color:  rgb(1, 110, 182);
+}
+
+.msgbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 250px;
+    width: 200px;
+    border: 2px solid; 
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lavender;
+}
+
+.msgbox button{
+    position: absolute;
+    bottom: 10px;
+    left: 40%;
+}
+
+.msgbox textarea{
+    width: 89%;
+}
+
+.add h3{
+    position: relative;
+    left: 10px ;
+}
+
+.add i{
+    float: left;
 }
