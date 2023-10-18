@@ -9,19 +9,61 @@ body{
     /* background-color: rgb(91, 241, 247);     */
     margin: 0;
     padding: auto;
+    /* background-image: url(bg.jpeg); */
 }
 
 #tmain {
     text-decoration: none;
 }
+.container{
+    position: relative;
+}
+.center {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 40px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+.center1 {
+    position: absolute;
+    top: 69%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 40px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+.center2 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 20px;
+    color: white;
+    font-family: sans-serif;
+}
+  
+
 .logo{
     position: absolute;
-    left: 20px;
-    top: 20px;
+    left: 29px;
+    top: 25px;
     height: 150px;
     width: 20%;
     float: left;
-   
+}
+
+.logo img{
+    border-radius: 50%;
+}
+#bg{
+    filter: brightness(70%);
+    opacity: 0.9;
 }
 .title{
     position: absolute;
@@ -36,16 +78,22 @@ body{
 
 .title h1{
     font-size:20px;
-    color: rgb(1, 110, 182);
+    color:  rgb(255, 255, 255);
     font-family: 'Zilla Slab';
 }
 
 .title h2{
     font-size:15px;
-    color: rgb(1, 110, 182);
-   
-
+    color: rgb(255, 255, 255);
 }
+.title h3{
+    position: absolute;
+    right: 30%;
+    top: 300px;
+    font-size:30px;
+    color: rgb(255, 255, 255);
+}
+
 .navbar{
    
     position:absolute;
@@ -71,7 +119,7 @@ body{
     
 }
 .navbar ul li a {
-    color: rgb(1, 110, 182);
+    color: rgb(255, 255, 255);
     font-size: 15px;
     text-decoration: none;
     transition: 0.2s;
@@ -79,8 +127,8 @@ body{
 
 }
 .navbar ul li a:hover{
-    color:rgb(1, 110, 182);
-    text-shadow: 0 0 2px rgb(1, 110, 182), 0 0 8px rgb(1, 110, 182);
+    color:rgb(133, 241, 255);
+    text-shadow: 0 0 2px rgb(133, 241, 255), 0 0 8px rgb(133, 241, 255);
     font-size: 18px;
 }
 
@@ -88,7 +136,7 @@ body{
     position: absolute;
     height: 880px;
     width: 100%;
-    top: 150px;
+    top: 420px;
     right: 0;
 
 }
