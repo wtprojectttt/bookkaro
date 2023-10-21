@@ -144,50 +144,103 @@ body{
     position: absolute;
     height: 100%;
     width: 100%;
-    overflow: hidden;
-    
+    top: 20px;
 }
+
+.flightt{
+    position: absolute;
+    width: 100%;
+}
+
 .offer1 {
     position: absolute;
-    width: 45%;
-    height: 50px;
+    width: 30%;
+    height: 170px;
     padding: 10px;
-    margin: 10px;
-}
-.offer2 {
-    position: absolute;
-    top: 200px;
-    width:45%;
-    height: 50px;
-    padding: 10px;
-    margin: 10px;
-}
-.offer3 {
-    position: absolute;
-    top: 400px;
-    width:45%;
-    height: 50px;
-    padding: 10px;
-    margin: 10px;
-}
-.offer4 {
-    position: absolute;
-    top: 600px;
-    width:45%;
-    height: 50px;
-    padding: 10px;
-    margin: 10px;
+    /* margin: 10px; */
+    border: 1px gray solid;
+    border-radius: 20px;
 }
 
 .plane{ 
     position: absolute;
     right: 20px;
     /* box-shadow:  0 0 2px rgb(0, 0, 0), 0 0 8px rgb(0, 0, 0); */
-   
+}
+
+.trainn{
+    position: absolute;
+    width: 100%;
+    top: 200px;
+}
+.offer2 {
+    position: absolute;
+    /* top: 200px; */
+    width:30%;
+    height: 170px;
+    padding: 10px;
+    /* margin: 10px; */
+    border: 1px gray solid;
+    border-radius: 20px;
+}
+
+.train{
+    position: absolute;
+    /* top: 200px; */
+    right: 20px;
+}
+
+.buss{
+    position: absolute;
+    width: 100%;
+    top: 420px;
+}
+
+.offer3 {
+    position: absolute;
+    /* top: 400px; */
+    width:30%;
+    height: 170px;
+    padding: 10px;
+    /* margin: 10px; */
+    border: 1px gray solid;
+    border-radius: 20px;
+}
+
+.bus{
+    position: absolute;
+    /* top: 400px; */
+    right: 20px;
+}
+
+.carr{
+    position: absolute;
+    width: 100%;
+    top: 620px;
+}
+
+.offer4 {
+    position: absolute;
+    /* top: 600px; */
+    width:30%;
+    height: 170px;
+    padding: 10px;
+    /* margin: 10px; */
+    border: 1px gray solid;
+    border-radius: 20px;
+}
+
+.cab{
+    position: absolute;
+    right: 20px;
+    /* top: 600px; */
 }
 
 .over{
     position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
     top: 0;
     left: 0;
     right: 0;
@@ -197,43 +250,54 @@ body{
     background: black;
     cursor: pointer;
 }
-.content{
+.content1{
+    position: absolute;
+    top: 50%;
+    right: 4%;
+    transform: translate(-50%,-50%);
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.content2{
     position: absolute;
     top: 50%;
     right: 10%;
     transform: translate(-50%,-50%);
-    color: white;
+    color: rgb(255, 255, 255);
     text-align: center;
-    
 }
+
+.content3{
+    position: absolute;
+    top: 50%;
+    right: 17%;
+    transform: translate(-50%,-50%);
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.content4{
+    position: absolute;
+    top: 50%;
+    right: 17%;
+    transform: translate(-50%,-50%);
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
 .plane:hover .over{
     opacity: 0.8;
-
-}
-.train{
-    position: absolute;
-    top: 200px;
-    right: 20px;
-}
-.train:hover .over{
-    opacity: 0.8;
-    right: 10px;
-}
-
-.bus{
-    position: absolute;
-    top: 400px;
-    right: 20px;
 }
 
 .bus:hover .over{
     opacity: 0.8;
 }
-.cab{
-    position: absolute;
-    right: 20px;
-    top: 600px;
-}
+
 .cab:hover .over{
+    opacity: 0.8;
+}
+
+.train:hover .over{
     opacity: 0.8;
 }
