@@ -143,56 +143,47 @@ body{
 .offer{
     position: absolute;
     height: 100%;
-    width: 180px;
-    
+    width: 100%;
     overflow: hidden;
+    
 }
 .offer1 {
     position: absolute;
-
-    width:90%;
-    height: 190px;
+    width: 45%;
+    height: 50px;
     padding: 10px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: rgb(112, 112, 112);
-    border-radius: 5px;
     margin: 10px;
 }
 .offer2 {
     position: absolute;
     top: 200px;
-    width:90%;
-    height: 190px;
+    width:45%;
+    height: 50px;
     padding: 10px;
-    
     margin: 10px;
 }
 .offer3 {
     position: absolute;
     top: 400px;
-    width:90%;
-    height: 190px;
+    width:45%;
+    height: 50px;
     padding: 10px;
-   
     margin: 10px;
 }
 .offer4 {
     position: absolute;
     top: 600px;
-    width:90%;
-    height: 190px;
+    width:45%;
+    height: 50px;
     padding: 10px;
     margin: 10px;
 }
 
 .plane{ 
     position: absolute;
-    top: 0px;
-    left: 200px;
+    right: 20px;
     /* box-shadow:  0 0 2px rgb(0, 0, 0), 0 0 8px rgb(0, 0, 0); */
-    border: solid 2px;
-    border-radius: 40px;
+   
 }
 
 .over{
@@ -221,33 +212,28 @@ body{
 }
 .train{
     position: absolute;
-    top: 220px;
-    left: 200px;
-    box-shadow:  0 0 2px rgb(0, 0, 0), 0 0 8px rgb(0, 0, 0);
+    top: 200px;
+    right: 20px;
 }
 .train:hover .over{
     opacity: 0.8;
-
+    right: 10px;
 }
 
 .bus{
     position: absolute;
-    top: 440px;
-    left: 200px;
-    box-shadow:  0 0 2px rgb(0, 0, 0), 0 0 8px rgb(0, 0, 0);
-
+    top: 400px;
+    right: 20px;
 }
+
 .bus:hover .over{
     opacity: 0.8;
-
 }
 .cab{
     position: absolute;
-    left: 200px;
-    top: 660px;
-    box-shadow:  0 0 2px rgb(0, 0, 0), 0 0 8px rgb(0, 0, 0);
+    right: 20px;
+    top: 600px;
 }
 .cab:hover .over{
     opacity: 0.8;
-
 }
