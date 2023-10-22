@@ -7,6 +7,13 @@
     color: rgb(1, 110, 182);
 }
 
+body{
+    /* background-color: rgb(91, 241, 247);     */
+    margin: 0;
+    padding: auto;
+    /* background-image: url(bg.jpeg); */
+}
+
 .logo{
     position: absolute;
     left: 20px;
