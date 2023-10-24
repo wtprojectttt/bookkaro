@@ -1,9 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=poppins');
 
 * {
+    
+    font-family: 'Zilla Slab';
     margin: 0;
     padding: 0;
-    font-family: 'poppins' ,sans-serif;
+}
+body{
+    /* background-color: rgb(91, 241, 247);     */
+    margin: 0;
+    padding: auto;
+    /* background-image: url(bg.jpeg); */
 }
 
 #tmain {

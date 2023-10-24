@@ -4,6 +4,16 @@
     margin: 0;
     padding: 0;
 }
+body{
+    /* background-color: rgb(91, 241, 247);     */
+    margin: 0;
+    padding: auto;
+    /* background-image: url(bg.jpeg); */
+    background-image: url(airport.jpeg);
+    background-repeat: no-repeat;
+    background-size: 45% , 20%;
+    background-position-x: right;
+}
 
 #tmain {
     text-decoration: none;
@@ -85,12 +95,13 @@
 }
 
 .booking {
-    border: 5px solid;
+    border: 2px solid;
     margin: auto;
     width: 70%;
     padding: 20px;
-    background-color: aqua;
     margin-top: 120px;
+    border-radius: 15px;
+    background-color: hsl(223, 95%, 68%)
 }
 .trip{
     float: left;
@@ -129,16 +140,24 @@
 }
 
 .container {
-    background-color: aquamarine;
-    width: 100%;
+    width: 350px;
+    height: 400px;
+    background-color: aqua;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-left: 600px;
+    margin-top: 50px;
+    border: 2px;
+    border-color: green;
+    border-radius: 25px;
 }
 .inputbox {
     position: relative;
     margin: auto;
     margin-top: 30px;
     width: 300px;
-    border-bottom: 2px solid gray;
-    background-color: bisque;
+    height: 60px;
 }
 
 .inputbox label {
@@ -154,7 +173,7 @@
 
 input:focus ~ label,
 input:valid ~ label{
-    top: -5px;
+    top: -1px;
 }
 
 .inputbox input {
@@ -174,4 +193,8 @@ input:valid ~ label{
     color: gray;
     font-size: 1.5em;
     top: 20px;
+}
+
+.fareButton {
+    background-color: white;
 }
