@@ -154,7 +154,7 @@ body{
 
 .offer1 {
     position: absolute;
-    width: 30%;
+    width: 70%;
     height: 170px;
     padding: 10px;
     /* margin: 10px; */
@@ -166,7 +166,6 @@ body{
 .plane{ 
     position: absolute;
     right: 20px;
-    /* box-shadow:  0 0 2px rgb(0, 0, 0), 0 0 8px rgb(0, 0, 0); */
 }
 
 .trainn{
@@ -212,7 +211,6 @@ body{
 
 .bus{
     position: absolute;
-    /* top: 400px; */
     right: 20px;
 }
 
@@ -341,16 +339,16 @@ body{
   font-size: 18px;
 }
 
-.button-30:focus {
+.button0:focus {
   box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
 }
 
-.button-30:hover {
+.button0:hover {
   box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
   transform: translateY(-2px);
 }
 
-.button-30:active {
+.button0:active {
   box-shadow: #D6D6E7 0 3px 7px inset;
   transform: translateY(2px);
 }
