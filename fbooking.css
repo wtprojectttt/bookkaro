@@ -4,15 +4,28 @@
     margin: 0;
     padding: 0;
 }
+.backgroundimg {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background-image: url(airport.jpeg);
+    background-color: aqua;
+    margin-left: 55%;
+    background-repeat: no-repeat;
+    border-radius: 50px;
+}
+
+.header {
+    width: 100%;
+    height: 100px;
+}
+
 body{
     /* background-color: rgb(91, 241, 247);     */
     margin: 0;
     padding: auto;
     /* background-image: url(bg.jpeg); */
-    background-image: url(airport.jpeg);
-    background-repeat: no-repeat;
-    background-size: 45% , 20%;
-    background-position-x: right;
+    
 }
 
 #tmain {
@@ -29,12 +42,11 @@ body{
 }
 .title{
     position: absolute;
-    left: 110px;
-    top: 37px;
+    left: 90px;
+    top: 30px;
     align-items: center;
-    height: 80px;
-    width: 27%;
-    /* background-color: aquamarine; */
+    height: 50px;
+    width: 10%;
     float: left;
 }
 
@@ -90,21 +102,25 @@ body{
 
 
 .booking {
+    position: relative;
     border: 2px solid;
     margin: auto;
     width: 70%;
     padding: 20px;
-    margin-top: 120px;
+    margin-top: 60px;
     border-radius: 15px;
     /* background-color: hsl(223, 95%, 68%) */
 }
 .trip{
+    position: absolute;
     float: left;
+    top: 25%;
 }
 
 .ahh{
     position: absolute;
-    right: 15%;
+    right: 2%;
+    top: 25%;
     float: right;
 }
 
@@ -127,6 +143,7 @@ body{
   }
 
 .fareType {
+    position: relative;
     margin: auto;
     width: 70%;   
 }
@@ -135,6 +152,7 @@ body{
 }
 
 .container {
+    position: relative;
     width: 350px;
     height: 400px;
     background-color: aqua;
