@@ -9,7 +9,9 @@
 <body>
 
     <header>
-        <div class="container">
+        <div class="circle"></div>
+        <div class="bar"></div>
+        <div class="container"> 
             <div class="logo">
                 <img src="logo.png" alt="logo" height="70" width="70" usemap="mlogo" id="mlogo">
             </div>
@@ -18,8 +20,8 @@
                     <h1>SOMAIYA</h1>
                     <h2>TOUR and TRAVEL</h2>
                 </a>
-            </div>
-        </div>
+            </div>    
+        </div>   
         
         <div class="navbar">
         <ul>
@@ -31,26 +33,48 @@
         </div>
         </header>
 
-    <!-- <div class="containers">
-        <div class="login-box">
-            <div class="inputbox">
-                <input type="text" required>
-                <label for="">Form</label>
+        <div class="form">
+
+            <div class="head">
+                <h1>Reserve Your Ticket</h1>
             </div>
-            <div class="inputbox">
-                <input type="text" required>
-                <label for="">TO</label>
+
+            <div class="content">
+                <input type="radio" class="radio" name="r">
+                <label class="text-white">One Way</label>
+                <input type="radio" class="radio" name="r">
+                <label class="text-white">Return</label>
             </div>
-            <div class="inputbox">
-                <input type="date" required>
-                <label for="">Date Of Journey</label>
-            </div>
-            <div class="inputbox">
-                <input type="text" required>
-                <label for="">Class</label>
-            </div>
+
+            <div class="content2">
+                <input type="text" placeholder="From" class="input">
+                <input type="text" placeholder="To" class="input"><br>
+
+
+            <label class="text-white" style="margin-left:10px;">Depart</label>
+            <input type="date" class="tarikh bg-dark text-white">
+            <label class="text-white" style="margin-left:10px;">Return</label>
+            <input type="date" class="tarikh bg-dark">
+
+            <input type="number" class="bg-dark person" placeholder="Adults">
+            <input type="number" class="bg-dark person" placeholder="Children"><br>
+
+            <label class="text-white travel">Travel Class</label>
+            <select class="bg-dark text-white travel2">
+                <option></option>
+                <option>First Class/1A</option>
+                <option>AC 2tier/2A</option>
+                <option>AC 3tier/3A</option>
+                <option>Executive class chair car/Economy Class</option>
+                <option>AC Chair Car</option>
+                <option>Sleeper Class</option>
+                <option>Second Class</option>
+                <option>General</option>
+            </select>
+
+            <input type="submit" value="Book Ticket" class="submit-btn">
         </div>
-    </div>
-    <script src="main.js"></script> -->
+        </div>
+    </form>s
 </body>
 </html>
