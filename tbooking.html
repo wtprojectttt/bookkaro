@@ -8,73 +8,118 @@
 </head>
 <body>
 
-    <header>
-        <div class="circle"></div>
-        <div class="bar"></div>
-        <div class="container"> 
+    <div class="backgroundimg"><img src="station.jpg" alt="station" height="100%" width="100%" ></div>
+    <div class="header">
             <div class="logo">
-                <img src="logo.png" alt="logo" height="70" width="70" usemap="mlogo" id="mlogo">
+                <img src="logo.png" alt="logo" height="60" width="60" id="mlogo">
             </div>
             <div class="title">
                 <a href="main.html" id="tmain">
-                    <h1>SOMAIYA</h1>
+                    <h1>BOOK KARO</h1>
                     <h2>TOUR and TRAVEL</h2>
                 </a>
-            </div>    
-        </div>   
-        
-        <div class="navbar">
-        <ul>
-            <li><a href="main.html">Home</a></li>
-            <li><a href="#section-us">About</a></li>
-            <li><a href="contact.html">Contact </a></li>
-            <li><a href="login.html">Register/Login</a></li>
-        </ul>
-        </div>
-        </header>
-
-        <div class="form">
-
-            <div class="head">
-                <h1>Reserve Your Ticket</h1>
             </div>
 
-            <div class="content">
-                <input type="radio" class="radio" name="r">
-                <label class="text-white">One Way</label>
-                <input type="radio" class="radio" name="r">
-                <label class="text-white">Return</label>
+            <div class="navbar">
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li><a>About</a></li>
+                <li><a href="contact.html">Contact </a></li>
+                <li><a href="login.html">Register/Login</a></li>
+            </ul>
             </div>
-
-            <div class="content2">
-                <input type="text" placeholder="From" class="input">
-                <input type="text" placeholder="To" class="input"><br>
-
-
-            <label class="text-white" style="margin-left:10px;">Depart</label>
-            <input type="date" class="tarikh bg-dark text-white">
-            <label class="text-white" style="margin-left:10px;">Return</label>
-            <input type="date" class="tarikh bg-dark">
-
-            <input type="number" class="bg-dark person" placeholder="Adults">
-            <input type="number" class="bg-dark person" placeholder="Children"><br>
-
-            <label class="text-white travel">Travel Class</label>
-            <select class="bg-dark text-white travel2">
-                <option></option>
-                <option>First Class/1A</option>
-                <option>AC 2tier/2A</option>
-                <option>AC 3tier/3A</option>
-                <option>Executive class chair car/Economy Class</option>
-                <option>AC Chair Car</option>
-                <option>Sleeper Class</option>
-                <option>Second Class</option>
-                <option>General</option>
-            </select>
-
-            <input type="submit" value="Book Ticket" class="submit-btn">
+    </div>
+    <div class="booking">
+        <div class="trip">
+            <input type="radio" class="buttonTrip" name="tripType" value="oneWay">
+            <label>General</label>
+            <input type="radio" class="buttonTrip" name="tripType" value="round">
+            <label>Tatkal</label>
+            <input type="radio" class="buttonTrip" name="tripType" value="Multi">
+            <label>Duty Pass</label>
         </div>
+        <div class="ahh">
+            <p>Book your Train ticket type</p>
         </div>
-    </form>s
+    </div>
+
+    <div class="anitext">
+        Travel &
+        <span id="element"></span>
+    </div>
+
+    <div class="personalInfo">
+
+        <form action="index.php" method="post" enctype="multipart/form-data">
+    
+            <label for="Fname">First Name:</label><br>
+            <input type="text" placeholder="squidwards" id="Username" minlength="6" maxlength="20" required><br>
+            
+            <label for="Lname">Last Name:</label><br>
+            <input type="text" placeholder="squidwards" id="Username" minlength="6" maxlength="20" required><br>
+            
+            <label for="bday">Birthday:</label><br>
+            <input type="date" id="bday"> <br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" placeholder="Spongebob@squarepants.com" required><br>
+                
+            <label for="phone">Phone #</label><br>
+            <input type="tel" id="phone"  placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
+             
+            <label for="quantity">Number of passenger</label><br>
+            <input type="number" id="quantity" min="0" max="99" value="1"><br> 
+        </form>
+
+    </div>
+
+    <div class="container">
+        <div class="login-box">
+            <div class="inputbox">
+                <input type="text" required>
+                <label for="">Form</label>
+            </div>
+            <div class="inputbox">
+                <input type="text" required>
+                <label for="">TO</label>
+            </div>
+            <div class="inputbox">
+                <input type="date" required>
+                <label for="">Boarding Date</label>
+            </div>
+            <div class="inputbox">
+                <input type="text" required>
+                <label for="">Class</label>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="fareType">
+        Select a Coach Type:
+        <table id="table">
+            <td class="fareButton"><input type="radio" name="fare" value="Regular">
+            <label>First class AC(1A)</label></td>
+            <td class="fareButton"><input type="radio" name="fare" value="Armed">
+            <label>AC 2 Tier (2A) </label></td>
+            <td class="fareButton"><input type="radio" name="fare" value="Student">
+            <label>AC 3 Tier (3A)</label></td>
+            <td class="fareButton"><input type="radio" name="fare" value="Senior">
+            <label>AC 3 Economy (3E)</label></td>
+            <td class="fareButton"><input type="radio" name="fare" value="Medical">
+            <label>AC Chair Car (CC)</label></td>
+            <td class="fareButton"><input type="radio" name="fare" value="Double">
+            <label>Sleeper (SL)</label></td>
+        </table>
+    </div>
+    <script src="fbooking.js"></script>
+    <script src="main.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['<bold>Book</bold>', '<bold>Travel</bold>','<bold>Enjoy</bold>','<bold>Live</bold>','<bold>Book</bold>', '<bold>Travel</bold>','<bold>Enjoy</bold>','<bold>Live</bold>'
+                      ,'<bold>Book</bold>', '<bold>Travel</bold>','<bold>Enjoy</bold>','<bold>Live</bold>','<bold>Book</bold>', '<bold>Travel</bold>','<bold>Enjoy</bold>','<bold>Live</bold>'],
+            typeSpeed: 75,
+            });
+    </script>
 </body>
 </html>

@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css?family=Zilla Slab');
 * {
     
@@ -6,64 +5,64 @@
     margin: 0;
     padding: 0;
 }
+.backgroundimg {
+    
+    position: absolute;
+    width: 45%;
+    height: 100%;
+    background-image: url(station.jpg);
+    margin-left: 55%;
+    background-repeat: no-repeat;
+    border-top-left-radius: 50px;
+}
+
+.header {
+    width: 100%;
+    height: 100px;
+}
+
 body{
     /* background-color: rgb(91, 241, 247);     */
     margin: 0;
     padding: auto;
     /* background-image: url(bg.jpeg); */
-    /* background-color: #4910b3; */
+    
 }
-.container{
-    position: relative;
-}
+
 #tmain {
     text-decoration: none;
 }
-
 .logo{
     position: absolute;
-    left: 29px;
-    top: 25px;
+    left: 20px;
+    top: 20px;
     height: 150px;
     width: 20%;
     float: left;
-}
-
-.logo img{
-    border-radius: 50%;
-}
-#bg{
-    filter: brightness(70%);
-    opacity: 0.9;
+   
 }
 .title{
     position: absolute;
-    left: 110px;
-    top: 37px;
+    left: 90px;
+    top: 30px;
     align-items: center;
-    height: 80px;
-    width: 27%;
+    height: 50px;
+    width: 10%;
     float: left;
 }
 
 .title h1{
     font-size:20px;
-    color:  rgb(255, 255, 255);
+    color: rgb(1, 110, 182);
     font-family: 'Zilla Slab';
 }
 
 .title h2{
     font-size:15px;
-    color: rgb(255, 255, 255);
-}
-.title h3{
-    position: absolute;
-    right: 30%;
-    top: 300px;
-    font-size:30px;
-    color: rgb(255, 255, 255);
-}
+    color: rgb(1, 110, 182);
+   
 
+}
 .navbar{
    
     position:absolute;
@@ -89,7 +88,7 @@ body{
     
 }
 .navbar ul li a {
-    color: rgb(255, 255, 255);
+    color: rgb(1, 110, 182);
     font-size: 15px;
     text-decoration: none;
     transition: 0.2s;
@@ -97,71 +96,144 @@ body{
 
 }
 .navbar ul li a:hover{
-    color:rgb(133, 241, 255);
-    text-shadow: 0 0 2px rgb(133, 241, 255), 0 0 8px rgb(133, 241, 255);
+    color:rgb(135, 252, 246);
+    text-shadow: 0 0 2px rgb(135, 255, 249), 0 0 8px rgb(135, 255, 249);
     font-size: 18px;
 }
 
-.circle{
+.booking {
+    position: relative;
+    border: 2px solid;
+    margin: auto;
+    width: 70%;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 15px;
+    /* background-color: hsl(223, 95%, 68%) */
+}
+.trip{
     position: absolute;
-    top: -90px;
-    left: -90px;
-    height:250px;
-    width: 250px;
-    background-color: rgb(8, 22, 216);
-    border-radius: 40%;
-    /* box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset; */
+    float: left;
+    top: 25%;
+}
+
+.ahh{
+    position: absolute;
+    right: 2%;
+    top: 25%;
+    float: right;
+}
+
+.bookingTable {
+    margin: auto;
+    width: 70%;
+    margin-top: 20px;
+    background-color: aqua;
 
 }
-.bar{
-    position: absolute;
-    top: 0px;
+
+.bookingTable table {
     width: 100%;
     height: 100px;
-    background-color: rgb(8, 22, 216);
-    /* box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset; */
+
+}
+.bookingTable th, td {
+    border: 1px solid black;
+    border-radius: 10px;
+  }
+
+.fareType {
+    position: relative;
+    margin: auto;
+    width: 70%;   
+    top: 20px;
+}
+.fareType table {
+    width: 100%;
 }
 
-.form{
+.container {
+    position: relative;
+    width: 350px;
+    height: 400px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-left: 1000px;
+    margin-top: 50px;
+    background-color: aqua;
+}
+.inputbox {
+    position: relative;
+    background-color: aqua;
+    margin-top: 10px;
+    margin-left: 30px;
+    width: 300px;
+    height: 60px;
+}
+
+.inputbox label {
     position: absolute;
-    top: 200px  ;
-    height:500px;
-    width:600px;
-    margin-top:5%;
-    margin-left:25%;
+    top: 70%;
+    left: 10px;
+    transform: translateY(-5%);
+    color: black;
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s;
 }
-.head{
-    padding:8px;
+
+#date {
+    position: absolute;
+
 }
-.content .radio{
-    margin:10px 10px;
+
+input:focus ~ label,
+input:valid ~ label{
+    top: -1px;
 }
-.content2 .input{
-    width:400px;
-    padding:10px;
-    margin:10px;
-    color:#000000;
+
+.inputbox input {
+    width: 80%;
+    height: 60px;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 0 10px 0 30px;
+    color: balck;
 }
-.content2 .tarikh{
-    margin:10px;
-    padding:10px;
-    color:#000000;
+
+.inputbox ion-icon {
+    position: absolute;
+    right: 8px;
+    color: black;
+    font-size: 1.5em;
+    top: 20px;
 }
-.content2  .person{
-    padding:10px;
-    margin:10px;
-    color:#000000;
+
+.fareButton {
+    background-color: white;
 }
-.content2 .travel{
-    margin:20px 20px;
+
+.anitext {
+    position: absolute;
+    top: 200px;
+    left: 650px;
+    width: 20%;
+    height: 50px;
+    font-size: 40px;
 }
-.content2 .travel2{
-    padding:5px;
+
+#element {
+    font-size: 40px;
 }
-.content2 .submit-btn{
-    border:none;
-    outline:none;
-    width:200px;
-    padding:10px;
-    margin-left:200px;
+
+.personalInfo {
+    position: absolute;
+    background-color: aqua;
+    top: 200px;
+    margin-left: 100px;
+    height: 400px;
+    width: 500px;
+
 }
