@@ -10,7 +10,7 @@
     <div class="backgroundimg"></div>
     <div class="header">
             <div class="logo">
-                <img src="logo.png" alt="logo" height="60" width="60" id="mlogo">
+                <img src="logo.png" alt="logo" height="130px" width="130px" id="mlogo">
             </div>
             <div class="title">
                 <a href="main.html" id="tmain">
@@ -47,29 +47,36 @@
             BookKaro &
             <span id="element"></span>
         </div>
-
+    
         <div class="personalInfo">
 
-            <form action="index.php" method="post" enctype="multipart/form-data">
-        
-                <label for="Fname">First Name:</label><br>
-                <input type="text" placeholder="squidwards" id="Username" minlength="6" maxlength="20" required><br>
-                
-                <label for="Lname">Last Name:</label><br>
-                <input type="text" placeholder="squidwards" id="Username" minlength="6" maxlength="20" required><br>
-                
-                <label for="bday">Birthday:</label><br>
-                <input type="date" id="bday"> <br>
-
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" placeholder="Spongebob@squarepants.com" required><br>
-                    
-                <label for="phone">Phone #</label><br>
-                <input type="tel" id="phone"  placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
-                 
-                <label for="quantity">Number of passenger</label><br>
-                <input type="number" id="quantity" min="0" max="99" value="1"><br> 
-            </form>
+            <div class="info">
+                <div class="inputboxInfo">
+                    <label for="">First Name</label>
+                    <input type="text" required>
+                </div>
+                <div class="inputboxInfo">
+                    <label for="">Last Name</label>
+                    <input type="text" required>
+                </div>
+                <div class="inputboxInfo">
+                    <label for="">Date of Birth</label>
+                    <input type="date" required>
+                </div>
+                <div class="inputboxInfo">
+                    <label for="">Email</label>
+                    <input type="email" required>
+                </div>
+                <div class="inputboxInfo">
+                    <label for="">Contact Number</label>
+                    <input type="number" required>
+                </div>
+                <div class="inputboxInfo">
+                    <label for="">No of Passengers</label>
+                    <input type="number" required>
+                </div>
+            </div>
+           
 
         </div>
 
@@ -111,8 +118,6 @@
                 <label>Double Seat Fares</label></td>
             </table>
         </div>
-
-
 
     <script src="fbooking.js"></script>
     <script src="main.js"></script>

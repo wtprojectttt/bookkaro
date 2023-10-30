@@ -13,6 +13,8 @@
     margin-left: 55%;
     background-repeat: no-repeat;
     border-top-left-radius: 50px;
+    filter: blur(2px);
+   -webkit-filter: blur(2px);
 }
 
 .header {
@@ -33,11 +35,14 @@ body{
 }
 .logo{
     position: absolute;
-    left: 29px;
-    top: 25px;
+    left: 20px;
+    top: 20px;
     height: 150px;
     width: 20%;
-    float: left;
+    float: left;  
+}
+.logo img {
+    border-radius: 50%;
 }
 .title{
     position: absolute;
@@ -50,14 +55,15 @@ body{
 }
 .title h1{
     font-size:40px;
-    color:  rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     font-family: 'Zilla Slab';
 }
 
 .title h2{
     font-size:30px;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
+
 .navbar{
    
     position:absolute;
@@ -66,8 +72,6 @@ body{
     display: flex;
     justify-content: right;
     align-items: center;
-
-
 }
 .navbar ul{
     display: inline;
@@ -83,17 +87,17 @@ body{
     
 }
 .navbar ul li a {
-    color: rgb(1, 110, 182);
-    font-size: 15px;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
     text-decoration: none;
     transition: 0.2s;
     cursor: default;
 
 }
 .navbar ul li a:hover{
-    color:rgb(135, 252, 246);
-    text-shadow: 0 0 2px rgb(135, 255, 249), 0 0 8px rgb(135, 255, 249);
-    font-size: 18px;
+    color:rgb(133, 241, 255);
+    text-shadow: 0 0 2px rgb(133, 241, 255), 0 0 8px rgb(133, 241, 255);
+    font-size: 26px;
 }
 
 
@@ -103,9 +107,12 @@ body{
     margin: auto;
     width: 70%;
     padding: 20px;
-    margin-top: 20px;
     border-radius: 15px;
+    top: 50px;
     /* background-color: hsl(223, 95%, 68%) */
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.6); 
+    color: white;
 }
 .trip{
     position: absolute;
@@ -142,7 +149,7 @@ body{
     position: relative;
     margin: auto;
     width: 70%;   
-    top: 20px;
+    top: 110px;
 }
 .fareType table {
     width: 100%;
@@ -156,27 +163,33 @@ body{
     display: flex;
     align-items: center;
     margin-left: 1000px;
-    margin-top: 50px;
-    background-color: aqua;
+    top: 80px;
+    border-radius: 25%;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.2); 
+    color: white;
 }
 .inputbox {
     position: relative;
-    background-color: aqua;
     margin-top: 10px;
     margin-left: 30px;
     width: 300px;
     height: 60px;
+    border-radius: 20%;
 }
+
 
 .inputbox label {
     position: absolute;
     top: 70%;
     left: 10px;
     transform: translateY(-5%);
-    color: black;
+    color: white;
     font-size: 1em;
     pointer-events: none;
     transition: .5s;
+
+
 }
 
 #date {
@@ -192,30 +205,37 @@ input:valid ~ label{
 .inputbox input {
     width: 80%;
     height: 60px;
-    border: none;
-    outline: none;
+    border: solid;
+    border-color: black ;
+    border-top-right-radius: 80px;
     font-size: 1em;
     padding: 0 10px 0 30px;
-    color: balck;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.4); 
+    color: white;
+    
 }
 
 .inputbox ion-icon {
     position: absolute;
     right: 8px;
-    color: black;
+    color: white;
     font-size: 1.5em;
     top: 20px;
 }
 
 .fareButton {
-    background-color: white;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.6); 
+    color: white;
+    
 }
 
 .anitext {
     position: absolute;
     top: 200px;
-    left: 650px;
-    width: 20%;
+    left: 630px;
+    width: 30%;
     height: 50px;
     font-size: 40px;
 }
@@ -226,10 +246,38 @@ input:valid ~ label{
 
 .personalInfo {
     position: absolute;
-    background-color: aqua;
-    top: 200px;
+    top: 225px;
     margin-left: 100px;
     height: 400px;
     width: 500px;
-
+    font-size: 25px;
+    border: solid;
+    border-color: black;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.5);
+    color: white;
 }
+
+.inputboxInfo{
+    width: 90%;
+    height: 60px;
+}
+
+.inputboxInfo input{
+    float: right;
+    height: 30px;
+    width: 200px;
+    border-top-right-radius: 80px;
+    border: solid;
+    border-color: black;
+}
+
+.info {
+    margin-top: 35px;
+    margin-left: 40px;
+}
+
+
+
