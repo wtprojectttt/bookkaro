@@ -8,8 +8,14 @@
 </head>
 <body>
     <header>
+
+        <div class="anitext">
+           <span id="element1" style="color: black;"> BookKaro & </span>
+            <span id="element"></span>
+        </div>
+
     <div class="container">
-        <img src="bg.jpg" alt="bg" height="650px" width="100%" id="bg">
+        <img src="bg.jpg" alt="bg" height="750px" width="100%" id="bg">
         <div class="center2">Explore the Colourful World</div>
         <div class="center">AT YOUR IDEAL</div>
         <div class="center1"> TRAVEL COST</div>
@@ -36,6 +42,8 @@
     
     <div class="icon">
         <div class="offer">
+
+
             <div class="flightt">
                 <div class="offer1" id="1offer">
                     <h3>Fly and enjoy a holiday </h3>
@@ -44,16 +52,22 @@
                     </p><br><br><br>
                     <div class="botton"><button class="button0" role="button">Button 30</button></div>
                 </div>
-                <div class="plane">
-                    <img src="plane.jpg" alt="plane" height="180px" width="180px">
-                    <div class="over">
-                        <div class="content1" id="planeB">
-                            <h2>FLIGHT</h2>
-                            <h3>Tickets</h3>
+
+                <div class="emptyPlane">
+                    <div class="plane">
+                        <img src="plane.jpg" alt="plane" height="180px" width="180px">
+                        <div class="over">
+                            <div class="content1" id="planeB">
+                                <h2>FLIGHT</h2>
+                                <h3>Tickets</h3>
+                            </div>
                         </div>
                     </div>
                 </div>
+
             </div>
+
+
             <div class="trainn">
                 <div class="offer2">
                     <h3>Travel and Enjoy a Holiday </h3>
@@ -62,12 +76,15 @@
                     </p><br><br><br>
                     <div class="botton"><button class="button0" role="button">Button 30</button></div>
                 </div>
-                <div class="train">
-                    <img src="train.jpg" alt="train" height="180px" width="180px">
-                    <div class="over">
-                        <div class="content2" id="trainB">
-                            <h2>TRAIN</h2>
-                            <h3>Tickets</h3>
+
+                <div class="emptyTrain">
+                    <div class="train">
+                        <img src="train.jpg" alt="train" height="180px" width="180px">
+                        <div class="over">
+                            <div class="content2" id="trainB">
+                                <h2>TRAIN</h2>
+                                <h3>Tickets</h3>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -80,16 +97,20 @@
                     </p><br><br><br>
                     <div class="botton"><button class="button0" role="button">Button 30</button></div>
                 </div>
-                <div class="bus">
-                    <img src="bus.jpg" alt="plane" height="180px" width="180px">
-                    <div class="over">
-                        <div class="content3" id="busB">
-                            <h2>BUS</h2>
-                            <h3>Tickets</h3>
+
+                <div class="emptyBus">
+                    <div class="bus">
+                        <img src="bus.jpg" alt="plane" height="180px" width="180px">
+                        <div class="over">
+                            <div class="content3" id="busB">
+                                <h2>BUS</h2>
+                                <h3>Tickets</h3>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+
             <div class="carr">
                 <div class="offer4">
                     <h3>Find Reasonable price on cab </h3>
@@ -98,12 +119,15 @@
                     </p><br><br><br>
                     <div class="botton"><button class="button0" role="button">Button 30</button></div>
                 </div>
-                <div class="cab">
-                    <img src="cab.jpg" alt="plane" height="180px" width="180px">
-                    <div class="over">
-                        <div class="content4" id="carB">
-                            <h2>CAB</h2>
-                            <h3>Tickets</h3>
+                <div class="emptyCab">
+                        
+                    <div class="cab">
+                        <img src="cab.jpg" alt="plane" height="180px" width="180px">
+                        <div class="over">
+                            <div class="content4" id="carB">
+                                <h2>CAB</h2>
+                                <h3>Tickets</h3>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -134,5 +158,13 @@
         </section>
     </main>
     <script src="main.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['<bold>Book</bold>', '<bold>Travel</bold>','<bold>Enjoy</bold>','<bold>Live</bold>','<bold>Book</bold>', '<bold>Travel</bold>','<bold>Enjoy</bold>','<bold>Live</bold>'
+                      ,'<bold>Book</bold>', '<bold>Travel</bold>','<bold>Enjoy</bold>','<bold>Live</bold>','<bold>Book</bold>', '<bold>Travel</bold>','<bold>Enjoy</bold>','<bold>Live</bold>'],
+            typeSpeed: 75,
+            });
+    </script>
 </body>
 </html>

@@ -17,6 +17,7 @@ body{
 }
 .container{
     position: relative;
+    height: 750px
 }
 .center {
     position: absolute;
@@ -40,7 +41,7 @@ body{
 }
 .center2 {
     position: absolute;
-    top: 40%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%,-50%);
     font-size: 30px;
@@ -179,7 +180,6 @@ body{
 
 .train{
     position: absolute;
-    top: 200px;
     right: 20px;
 }
 
@@ -246,7 +246,7 @@ body{
 }
 .content1{
     position: absolute;
-    top: 50%;
+    top: 85px;
     right: 4%;
     transform: translate(-50%,-50%);
     color: rgb(255, 255, 255);
@@ -403,4 +403,47 @@ p {
 .team-member p {
     font-size: 16px;
     color: #777;
+}
+
+.anitext {
+    position: absolute;
+    top: 220px;
+    left: 600px;
+    width: 30%;
+    height: 50px;
+    font-size: 40px;
+}
+
+.emptyPlane {
+    position: relative;
+    width: 1039px;
+    height: 200px;
+    left: 480px;
+    background-color: aqua;
+}
+
+.emptyTrain {
+    position: relative;
+    width: 1039px;
+    height: 200px;
+    left: 480px;
+    top: 200px;
+
+}
+
+.emptyBus {
+    position: relative;
+    width: 1039px;
+    height: 200px;
+    left: 480px;
+    top: -20px;
+    
+}
+
+.emptyCab {
+    position: relative;
+    width: 1039px;
+    height: 200px;
+    left: 480px;
+    top: -20px;
 }
