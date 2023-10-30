@@ -7,10 +7,10 @@
     padding: 0;
 }
 body{
-    /* background-color: rgb(91, 241, 247);     */
+    background-color: rgb(91, 241, 247);    
     margin: 0;
     padding: auto;
-    /* background-image: url(bg.jpeg); */
+    background-image: url(loginbg.png);
 }
 
 #tmain {
@@ -22,30 +22,27 @@ body{
     top: 20px;
     height: 150px;
     width: 20%;
-    float: left;
-   
+    float: left;  
 }
 .title{
     position: absolute;
-    left: 110px;
-    top: 37px;
+    left: 180px;
+    top: 45px;
     align-items: center;
     height: 80px;
     width: 27%;
-    /* background-color: aquamarine; */
     float: left;
 }
-
 .title h1{
-    font-size:20px;
-    color: rgb(1, 110, 182);
+    font-size:40px;
+    color:  rgb(255, 255, 255);
     font-family: 'Zilla Slab';
 }
 
 .title h2{
-    font-size:15px;
-    color: rgb(1, 110, 182);
-}  
+    font-size:30px;
+    color: rgb(255, 255, 255);
+}
 
 .navbar{
    

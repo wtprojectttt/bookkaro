@@ -43,25 +43,22 @@ body{
 }
 .title{
     position: absolute;
-    left: 90px;
-    top: 30px;
+    left: 180px;
+    top: 45px;
     align-items: center;
-    height: 50px;
-    width: 10%;
+    height: 80px;
+    width: 27%;
     float: left;
 }
-
 .title h1{
-    font-size:20px;
-    color: rgb(1, 110, 182);
+    font-size:40px;
+    color:  rgb(255, 255, 255);
     font-family: 'Zilla Slab';
 }
 
 .title h2{
-    font-size:15px;
-    color: rgb(1, 110, 182);
-   
-
+    font-size:30px;
+    color: rgb(255, 255, 255);
 }
 .navbar{
    
