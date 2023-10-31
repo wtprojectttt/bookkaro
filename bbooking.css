@@ -44,24 +44,23 @@ body{
 }
 .title{
     position: absolute;
-    left: 180px;
-    top: 45px;
+    left: 150px;
+    top: 40px;
     align-items: center;
     height: 80px;
     width: 27%;
     float: left;
 }
 .title h1{
-    font-size:40px;
-    color: rgb(0, 0, 0);
+    font-size:35px;
+    color:  black;
     font-family: 'Zilla Slab';
 }
 
 .title h2{
     font-size:30px;
-    color: rgb(0, 0, 0);
+    color: black;
 }
-
 .navbar{
    
     position:absolute;
@@ -326,5 +325,7 @@ input:valid ~ label{
 footer {
     position: absolute;
     margin-top: 125px;
-
+    border: solid;
+    border-color: black ;
 }
+

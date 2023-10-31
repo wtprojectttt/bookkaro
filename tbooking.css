@@ -46,24 +46,23 @@ body{
 }
 .title{
     position: absolute;
-    left: 180px;
-    top: 45px;
+    left: 150px;
+    top: 40px;
     align-items: center;
     height: 80px;
     width: 27%;
     float: left;
 }
 .title h1{
-    font-size:40px;
-    color: rgb(0, 0, 0);
+    font-size:35px;
+    color:  rgb(255, 255, 255);
     font-family: 'Zilla Slab';
 }
 
 .title h2{
     font-size:30px;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
-
 .navbar{
    
     position:absolute;
@@ -321,5 +320,51 @@ input:valid ~ label{
 footer {
     position: absolute;
     margin-top: 125px;
-
 }
+
+.social {
+    margin-top: 5px;
+    width: 100px;
+    float: right;
+}
+
+
+
+.trademark {
+    width: 15%;
+    float: left;
+    font-size: 20px;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.footcontact {
+    width: 1460px;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 30px;
+    text-indent: 100px;
+    word-spacing: 200px;
+    text-decoration: none;
+    text-decoration-color: none;
+}
+
+.footer {
+    width: 100%;
+    height:115px;
+    background-color: gray;
+}
+
+.link {
+    width: 100%;
+    height: 27px;
+    background-color: #333;
+}
+
+footer {
+    position: absolute;
+    margin-top: 125px;
+    border: solid;
+    border-color: black ;
+}
+

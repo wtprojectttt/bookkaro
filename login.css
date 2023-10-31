@@ -26,16 +26,16 @@ body{
 }
 .title{
     position: absolute;
-    left: 180px;
-    top: 45px;
+    left: 150px;
+    top: 40px;
     align-items: center;
     height: 80px;
     width: 27%;
     float: left;
 }
 .title h1{
-    font-size:40px;
-    color: rgb(255, 255, 255);
+    font-size:35px;
+    color:  rgb(255, 255, 255);
     font-family: 'Zilla Slab';
 }
 
@@ -241,7 +241,7 @@ button {
 .footer {
     margin-top: -17px;
     width: 100%;
-    height:115px;
+    height:98px;
     background-color: gray;
     border: solid;
     border-color: black ;

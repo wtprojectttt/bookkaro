@@ -70,15 +70,15 @@ body{
 
 .title{
     position: absolute;
-    left: 180px;
-    top: 45px;
+    left: 150px;
+    top: 40px;
     align-items: center;
     height: 80px;
     width: 27%;
     float: left;
 }
 .title h1{
-    font-size:40px;
+    font-size:35px;
     color:  rgb(255, 255, 255);
     font-family: 'Zilla Slab';
 }
@@ -157,21 +157,23 @@ body{
     border-radius: 20px;
     background: #fff;
     box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+    left: 720px;
 }
 
 .plane{ 
     position: absolute;
-    right: 20px;
+    right: 100px;
 }
 
 .trainn{
     position: absolute;
-    width: 100%;
-    top: 200px;
+    width: 30%;
+    top: 250px;
+    left: 1030px;
 }
 .offer2 {
     position: absolute;
-    width:30%;
+    width:100%;
     height: 170px;
     padding: 10px;
     /* margin: 10px; */
@@ -179,17 +181,18 @@ body{
     border-radius: 20px;
     background: white;
     box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+    right: 550px;
 }
 
 .train{
     position: absolute;
-    right: 20px;
+    left: 1000px;
 }
 
 .buss{
     position: absolute;
     width: 100%;
-    top: 400px;
+    top: 500px;
 }
 
 .offer3 {
@@ -202,11 +205,12 @@ body{
     border-radius: 20px;
     background: white;
     box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+    left: 200px;
 }
 
 .bus{
     position: absolute;
-    right: 20px;
+    right: 600px;
 }
 
 .carr{
@@ -411,12 +415,12 @@ p {
 
 .anitext {
     position: absolute;
-    top: 220px;
-    left: 600px;
-    width: 30%;
+    top: 180px;
+    left: 530px;
+    width: 50%;
     height: 50px;
-    font-size: 40px;
-    /* color: white; */
+    font-size: 60px;
+    color: white; 
 }
 
 .emptyPlane {
@@ -431,7 +435,8 @@ p {
     position: relative;
     width: 1039px;
     height: 200px;
-    left: 480px;
+    right: 1030px;
+   
     /* top: 200px; */
 
 }
@@ -681,3 +686,4 @@ p {
     height: 27px;
     background-color: #333;
 }
+
