@@ -344,7 +344,8 @@ body{
 }
 
 .us {
-    
+
+    margin-top: 1000px;
     background-color: #333;
     color: #fff;
     text-align: center;
@@ -417,7 +418,6 @@ p {
     width: 1039px;
     height: 200px;
     left: 480px;
-    background-color: aqua; 
 }
 
 .emptyTrain {
@@ -436,4 +436,147 @@ p {
     left: 480px;
     /* top: 400px; */
     
+}
+
+.goa {
+    position: absolute;
+    width: 600px;
+    height: 250px;
+    margin-top: 60px;
+    left: 30px;
+    border: solid;
+    border-color: black;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+}
+
+.goa img{
+    width: 280px;
+    height: 250px;
+    border-bottom-left-radius: 98px;
+
+}
+
+.kathmandu {
+    position: absolute;
+    width: 600px;
+    height: 250px;
+    margin-top: 60px;
+    right: 30px;
+    border: solid;
+    border-color: black;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+}
+
+.kathmandu img{
+    width: 280px;
+    height: 250px;
+    border-bottom-left-radius: 98px;
+}
+
+.cochin {
+    position: absolute;
+    width: 600px;
+    height: 250px;
+    margin-top: 360px;
+    left: 30px;
+    border: solid;
+    border-color: black;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+}
+
+.cochin img{
+    width: 280px;
+    height: 250px;
+    border-bottom-left-radius: 98px;
+}
+
+.colombo {
+    position: absolute;
+    width: 600px;
+    height: 250px;
+    margin-top: 360px;
+    right: 30px;
+    border: solid;
+    border-color: black;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+}
+
+.colombo img{
+    width: 280px;
+    height: 250px;
+    border-bottom-left-radius: 98px;
+}
+
+.zurich {
+    position: absolute;
+    width: 600px;
+    height: 250px;
+    margin-top: 660px;
+    left: 30px;
+    border: solid;
+    border-color: black;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+}
+
+.zurich img{
+    width: 280px;
+    height: 250px;
+    border-bottom-left-radius: 98px;
+}
+
+.mauritius {
+    position: absolute;
+    width: 600px;
+    height: 250px;
+    margin-top: 660px;
+    right: 30px;
+    border: solid;
+    border-color: black;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+}
+
+.mauritius img{
+    width: 280px;
+    height: 250px;
+    border-bottom-left-radius: 98px;
+}
+
+.a {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.b {
+    position: absolute;
+    font-size: 18px;
+    margin-top: 60px;
+    margin-left: 10px;
+    font-style: italic;
+    color: gray;
+}
+
+.c {
+    position: absolute;
+    font-size: 24px;
+    margin-top: 180px;
+    margin-left: 10px;
+    color: gray;
+    font-weight: bold;
+}
+
+.d {
+    position: absolute;
+    font-size: 25px;
+    margin-top: 210px;
+    margin-left: 10px;
+    font-weight: 700;
 }

@@ -17,4 +17,3 @@ document.getElementById('trainB').addEventListener('click', () =>{
 document.getElementById('carB').addEventListener('click', () =>{
     window.location.href = ('cbooking.html');
 })
-
