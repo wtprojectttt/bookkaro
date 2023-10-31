@@ -127,9 +127,9 @@ body{
 
 .icon {
     position: relative;
-    height: 880px;
+    height: 700px;
     width: 100%;
-    /* top: 420px; */
+    top: 20px;
     right: 0;
 
 }
@@ -164,11 +164,10 @@ body{
 .trainn{
     position: absolute;
     width: 100%;
-    /* top: 200px; */
+    top: 200px;
 }
 .offer2 {
     position: absolute;
-    top: 200px;
     width:30%;
     height: 170px;
     padding: 10px;
@@ -186,12 +185,11 @@ body{
 .buss{
     position: absolute;
     width: 100%;
-    top: 420px;
+    top: 400px;
 }
 
 .offer3 {
     position: absolute;
-    /* top: 400px; */
     width:30%;
     height: 170px;
     padding: 10px;
@@ -419,7 +417,7 @@ p {
     width: 1039px;
     height: 200px;
     left: 480px;
-    background-color: aqua;
+    background-color: aqua; 
 }
 
 .emptyTrain {
@@ -427,7 +425,7 @@ p {
     width: 1039px;
     height: 200px;
     left: 480px;
-    top: 200px;
+    /* top: 200px; */
 
 }
 
@@ -436,14 +434,6 @@ p {
     width: 1039px;
     height: 200px;
     left: 480px;
-    top: -20px;
+    /* top: 400px; */
     
-}
-
-.emptyCab {
-    position: relative;
-    width: 1039px;
-    height: 200px;
-    left: 480px;
-    top: -20px;
 }

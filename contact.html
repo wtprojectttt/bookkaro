@@ -9,7 +9,7 @@
     
 </head>
 <body>
-    <header>
+    <header class="container">
         <div>
             <div class="logo">
                 <img src="logo.png" alt="logo" height="130" width="130" usemap="mlogo" id="mlogo">
@@ -31,54 +31,71 @@
         </ul>
         </div>
     </header>
-<br><br><br><br><br><br>
+    <div class="content">
     <section class="head">
         <h2>Get in Touch</h2>
         <p>Have questions, feedback, or need assistance with your booking? Feel free to contact us.</p>
     </section>
-    <br>
-    <div class="line"></div>
-    <br>
-    <section class="cont">
-        <h3>Contact Information</h3>
-        <p>For general inquiries or support, you can reach us through the following methods:</p>
 
+    <div class="ccontainer">
+        <div class="text">
+           Contact us Form
+        </div>
+        <form action="#">
+           <div class="form-row">
+              <div class="input-data">
+                 <input type="text" required>
+                 <div class="underline"></div>
+                 <label for="">First Name</label>
+              </div>
+              <div class="input-data">
+                 <input type="text" required>
+                 <div class="underline"></div>
+                 <label for="">Last Name</label>
+              </div>
+           </div>
+           <div class="form-row">
+              <div class="input-data">
+                 <input type="text" required>
+                 <div class="underline"></div>
+                 <label for="">Email Address</label>
+              </div>
+              <div class="input-data">
+                 <input type="text" required>
+                 <div class="underline"></div>
+                 <label for="">Website Name</label>
+              </div>
+           </div>
+           <div class="form-row">
+           <div class="input-data textarea">
+              <textarea rows="8" cols="80" required></textarea>
+              <br />
+              <div class="underline"></div>
+              <label for="">Write your message</label>
+              <br />
+              <div class="form-row submit-btn">
+                 <div class="input-data">
+                    <div class="inner"></div>
+                    <input type="submit" value="submit">
+                 </div>
+              </div>
+        </form>
+        </div>
+    <div class="also">
+        <h3>Contact Information</h3>
+        <p>For general inquiries or support, you can reach us through the following methods:</p> 
         <ul>
             <li>
                 <i class="fa-solid fa-envelope" style="font-size:20px;color:rgb(1, 110, 182);" >
                 </i>Email: <a href="mailto:info@yourbookingsite.com">info@yourbookingsite.com</a>
-           </li>
-          
+            </li>
+      
             <li> 
                 <i class="fa-solid fa-phone"></i>
                 Phone: <a href="tel:+1234567890">+1 (123) 456-7890</a>
             </li>
         </ul>
-    </section>
-    <br>
-    <div class="line"></div>
-    <br>
-    <section>
-        <h3>Contact Form</h3>
-        <p>If you prefer, you can also use the contact form below to send us a message:</p>
-        <div class="msgbox">
-            <form action="submit_contact_form.php" method="post">
-                <label for="name">Your Name:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Your Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">Your Message:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-
-                <button type="submit">Submit</button>
-            </form>
-        </div>
-    </section>
-    <br>
-    <div class="line"></div>
-    <br>
+    </div>
     <section class="add">
         <i class="fa-solid fa-map-location-dot" style="font-size:20px;color:rgb(1, 110, 182);"></i>
         <h3>Office Address</h3>
@@ -90,15 +107,13 @@
             United States
         </address>
     </section>
-    <br>
-    <div class="line"></div>
-    <br>
-    <section>
+    <section class="busi">
         <h3>Business Hours</h3>
         <p>Our business hours are as follows:</p>
         <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
         <p>Saturday - Sunday: Closed</p>
     </section>
+    </div>
     <script src="main.js"></script>
 </body>
 </html>
