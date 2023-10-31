@@ -6,26 +6,27 @@
     padding: 0;
 }
 .backgroundimg {
-    
     position: absolute;
-    width: 45%;
+    width: 100%;
     height: 100%;
-    background-image: url(station.jpg);
-    margin-left: 55%;
+    /* background-image: url(station.jpg); */
+    margin-left: 50%;
     background-repeat: no-repeat;
     border-top-left-radius: 50px;
+    filter: blur(2px);
+   -webkit-filter: blur(2px);
 }
-
 .header {
     width: 100%;
     height: 100px;
 }
 
 body{
-    /* background-color: rgb(91, 241, 247);     */
+    min-height: 98vh;
+    padding: 0px;
     margin: 0;
-    padding: auto;
-    /* background-image: url(bg.jpeg); */
+    background: linear-gradient(115deg, #98e7e7 10%, #f7f329 90%);
+
     
 }
 
@@ -40,6 +41,10 @@ body{
     width: 20%;
     float: left;
    
+}
+
+.logo img{
+    border-radius: 50%;
 }
 .title{
     position: absolute;
@@ -85,17 +90,17 @@ body{
     
 }
 .navbar ul li a {
-    color: rgb(1, 110, 182);
-    font-size: 15px;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
     text-decoration: none;
     transition: 0.2s;
     cursor: default;
 
 }
 .navbar ul li a:hover{
-    color:rgb(135, 252, 246);
-    text-shadow: 0 0 2px rgb(135, 255, 249), 0 0 8px rgb(135, 255, 249);
-    font-size: 18px;
+    color:rgb(133, 241, 255);
+    text-shadow: 0 0 2px rgb(133, 241, 255), 0 0 8px rgb(133, 241, 255);
+    font-size: 26px;
 }
 
 .booking {
@@ -104,9 +109,12 @@ body{
     margin: auto;
     width: 70%;
     padding: 20px;
-    margin-top: 20px;
     border-radius: 15px;
+    top: 50px;
     /* background-color: hsl(223, 95%, 68%) */
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.6); 
+    color: white;
 }
 .trip{
     position: absolute;
@@ -135,7 +143,7 @@ body{
 
 }
 .bookingTable th, td {
-    border: 1px solid black;
+    border: 1px solid rgb(0, 0, 0);
     border-radius: 10px;
   }
 
@@ -143,7 +151,7 @@ body{
     position: relative;
     margin: auto;
     width: 70%;   
-    top: 20px;
+    top: 110px;
 }
 .fareType table {
     width: 100%;
@@ -157,27 +165,33 @@ body{
     display: flex;
     align-items: center;
     margin-left: 1000px;
-    margin-top: 50px;
-    background-color: aqua;
+    top: 80px;
+    border-radius: 25%;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0,0,0, 0.2); 
+    color: white;
 }
 .inputbox {
     position: relative;
-    background-color: aqua;
     margin-top: 10px;
     margin-left: 30px;
     width: 300px;
     height: 60px;
+    border-radius: 20%;
 }
+
 
 .inputbox label {
     position: absolute;
     top: 70%;
     left: 10px;
     transform: translateY(-5%);
-    color: black;
+    color: white;
     font-size: 1em;
     pointer-events: none;
     transition: .5s;
+
+
 }
 
 #date {
@@ -193,32 +207,40 @@ input:valid ~ label{
 .inputbox input {
     width: 80%;
     height: 60px;
-    border: none;
-    outline: none;
+    border-width: 3px  ;
+    border-color: rgb(255, 255, 255) ;
+    border-top-right-radius: 80px;
     font-size: 1em;
     padding: 0 10px 0 30px;
-    color: balck;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.4); 
+    color: white;
+    
 }
 
 .inputbox ion-icon {
     position: absolute;
     right: 8px;
-    color: black;
+    color: white;
     font-size: 1.5em;
     top: 20px;
 }
 
 .fareButton {
-    background-color: white;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.6); 
+    color: white;
+    
 }
 
 .anitext {
     position: absolute;
     top: 200px;
-    left: 650px;
-    width: 20%;
+    left: 630px;
+    width: 30%;
     height: 50px;
     font-size: 40px;
+    color: #fff;
 }
 
 #element {
@@ -227,10 +249,35 @@ input:valid ~ label{
 
 .personalInfo {
     position: absolute;
-    background-color: aqua;
-    top: 200px;
+    top: 225px;
     margin-left: 100px;
     height: 400px;
     width: 500px;
+    font-size: 25px;
+    border: solid;
+    border-color: black;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.5);
+    color: white;
+}
 
+.inputboxInfo{
+    width: 90%;
+    height: 60px;
+}
+
+.inputboxInfo input{
+    float: right;
+    height: 30px;
+    width: 200px;
+    border-top-right-radius: 80px;
+    border: solid;
+    border-color: black;
+}
+
+.info {
+    margin-top: 35px;
+    margin-left: 40px;
 }
