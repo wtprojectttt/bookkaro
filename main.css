@@ -444,10 +444,10 @@ p {
     height: 250px;
     margin-top: 60px;
     left: 30px;
-    border: solid;
-    border-color: black;
+    border: #000000;
     border-top-right-radius: 100px;
     border-bottom-left-radius: 100px;
+    box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
 }
 
 .goa img{
@@ -462,11 +462,10 @@ p {
     width: 600px;
     height: 250px;
     margin-top: 60px;
-    right: 30px;
-    border: solid;
-    border-color: black;
+    right: 30px;  
     border-top-right-radius: 100px;
     border-bottom-left-radius: 100px;
+    box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
 }
 
 .kathmandu img{
@@ -481,10 +480,9 @@ p {
     height: 250px;
     margin-top: 360px;
     left: 30px;
-    border: solid;
-    border-color: black;
     border-top-right-radius: 100px;
     border-bottom-left-radius: 100px;
+    box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
 }
 
 .cochin img{
@@ -499,10 +497,9 @@ p {
     height: 250px;
     margin-top: 360px;
     right: 30px;
-    border: solid;
-    border-color: black;
     border-top-right-radius: 100px;
     border-bottom-left-radius: 100px;
+    box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
 }
 
 .colombo img{
@@ -517,10 +514,9 @@ p {
     height: 250px;
     margin-top: 660px;
     left: 30px;
-    border: solid;
-    border-color: black;
     border-top-right-radius: 100px;
     border-bottom-left-radius: 100px;
+    box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
 }
 
 .zurich img{
@@ -535,10 +531,9 @@ p {
     height: 250px;
     margin-top: 660px;
     right: 30px;
-    border: solid;
-    border-color: black;
     border-top-right-radius: 100px;
     border-bottom-left-radius: 100px;
+    box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
 }
 
 .mauritius img{
