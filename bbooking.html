@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="tbooking.css">
+    <link rel="stylesheet" href="bbooking.css">
 </head>
 <body>
-
-    <header>
-        <div>
+    <div class="backgroundimg">
+        <img src="busstop.jpg" alt="bus" height="100%" width="100%">
+    </div>
+    <div class="header">
             <div class="logo">
-                <img src="logo.png" alt="logo" height="130" width="130" usemap="mlogo" id="mlogo">
+                <img src="logo.png" alt="logo" height="130px" width="130px" id="mlogo">
             </div>
             <div class="title">
                 <a href="main.html" id="tmain">
@@ -19,38 +20,117 @@
                     <h2>TOUR and TRAVEL</h2>
                 </a>
             </div>
-        </div>
-        
-        <div class="navbar">
-        <ul>
-            <li><a href="main.html">Home</a></li>
-            <li><a href="main.html#section-us">About</a></li>
-            <li><a href="contact.html">Contact </a></li>
-            <li><a href="login.html">Register/Login</a></li>
-        </ul>
-        </div>
-    </header>
 
-    <div class="container">
-        <div class="login-box">
-            <div class="inputbox">
-                <input type="text" required>
-                <label for="">Form</label>
+            <div class="navbar">
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li><a href="main.html#section-us">About</a></li>
+                <li><a href="contact.html">Contact </a></li>
+                <li><a href="login.html">Register/Login</a></li>
+            </ul>
             </div>
-            <div class="inputbox">
-                <input type="text" required>
-                <label for="">TO</label>
+    </div>
+        <div class="h">
+            <h1>BUS Booking</h1>
+        </div>
+
+        <div class="anitext">
+            BookKaro &
+            <span id="element"></span>
+        </div>
+    
+        <div class="personalInfo">
+
+            <div class="info">
+                <div class="inputboxInfo">
+                    <label for="">First Name</label>
+                    <input type="text" required>
+                </div>
+                <div class="inputboxInfo">
+                    <label for="">Last Name</label>
+                    <input type="text" required>
+                </div>
+                <div class="inputboxInfo">
+                    <label for="">Date of Birth</label>
+                    <input type="date" required>
+                </div>
+                <div class="inputboxInfo">
+                    <label for="">Email</label>
+                    <input type="email" required>
+                </div>
+                <div class="inputboxInfo">
+                    <label for="">Contact Number</label>
+                    <input type="number" required>
+                </div>
+                <div class="inputboxInfo">
+                    <label for="">No of Passengers</label>
+                    <input type="number" required min="0" max="6">
+                </div>
             </div>
-            <div class="inputbox">
-                <input type="date" required>
-                <label for="">Date Of Journey</label>
-            </div>
-            <div class="inputbox">
-                <input type="text" required>
-                <label for="">Class</label>
+           
+
+        </div>
+
+        <div class="container">
+            <div class="login-box">
+                <div class="inputbox">
+                    <input type="text" required>
+                    <label for="">Form</label>
+                </div>
+                <div class="inputbox">
+                    <input type="text" required>
+                    <label for="">TO</label>
+                </div>
+                <div class="inputbox">
+                    <input type="date" required>
+                    <label for="">Boarding Date</label>
+                </div>
+                <div class="inputbox">
+                    <input type="text" required>
+                    <label for="">Class</label>
+                </div>
             </div>
         </div>
-    </div>
+        <br><br><br>
+
+        <footer class="footer">
+
+            <div class="footcontact">
+            <label><a href="main.html#tripOffers" style="text-decoration: none;">Offers</a></label>
+            <label><a href="contact.html" style="text-decoration: none;">Contact</a></label>
+            <label><a href="login.html" style="text-decoration: none;">Register</a></label>
+            <label><a href="main.html#gift" style="text-decoration: none;">Coupons</a></label>
+            <label><a href="main.html#booknow" style="text-decoration: none;">BookToday</a></label>
+            </div>
+            <div class="link">
+                <div class="trademark">
+                    © 2023 BookKaro Pvt Ltd
+                </div>
+                <div class="social">
+                    <ion-icon name="logo-instagram" class="socialIcon"></ion-icon>
+                    <ion-icon name="logo-facebook" class="socialIcon"></ion-icon>
+                    <ion-icon name="logo-twitter" class="socialIcon"></ion-icon>
+                    <ion-icon name="mail-outline" class="socialIcon"></ion-icon>
+                    <ion-icon name="logo-linkedin" class="socialIcon"></ion-icon>
+                </div>
+            </div>
+        </footer>
+    
+    
+    
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script src="fbooking.js"></script>
     <script src="main.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['<bold>Book</bold>', '<bold>Travel</bold>','<bold>Enjoy</bold>','<bold>Live</bold>','<bold>Book</bold>', '<bold>Travel</bold>','<bold>Enjoy</bold>','<bold>Live</bold>'
+                      ,'<bold>Book</bold>', '<bold>Travel</bold>','<bold>Enjoy</bold>','<bold>Live</bold>','<bold>Book</bold>', '<bold>Travel</bold>','<bold>Enjoy</bold>','<bold>Live</bold>'],
+            typeSpeed: 75,
+            });
+    </script>
+</body>
 </body>
 </html>

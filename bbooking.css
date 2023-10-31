@@ -1,26 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Zilla Slab');
 * {
     
     font-family: 'Zilla Slab';
     margin: 0;
     padding: 0;
 }
-body{
-    /* background-color: rgb(91, 241, 247);     */
-    margin: 0;
-    padding: auto;
-    /* background-image: url(bg.jpeg); */
+.backgroundimg {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    /* background-image: url(busstop.jpg); */
+    margin-left: 50%;
+    background-repeat: no-repeat;
+    border-top-left-radius: 50px;
+    filter: blur(2px);
+   -webkit-filter: blur(2px);
 }
 
+.header {
+    width: 100%;
+    height: 100px;
+}
+
+body{
+    min-height: 100vh;
+    padding: 0px;
+    margin: 0;
+    background: linear-gradient(115deg, #98e7e7 10%, #ff5353 90%);
+}
 #tmain {
     text-decoration: none;
 }
 .logo{
     position: absolute;
-    left: 29px;
-    top: 25px;
+    left: 20px;
+    top: 20px;
     height: 150px;
     width: 20%;
-    float: left;
+    float: left;  
+}
+.logo img {
+    border-radius: 50%;
 }
 .title{
     position: absolute;
@@ -33,14 +53,15 @@ body{
 }
 .title h1{
     font-size:40px;
-    color:  rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     font-family: 'Zilla Slab';
 }
 
 .title h2{
     font-size:30px;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
+
 .navbar{
    
     position:absolute;
@@ -49,8 +70,6 @@ body{
     display: flex;
     justify-content: right;
     align-items: center;
-
-
 }
 .navbar ul{
     display: inline;
@@ -66,32 +85,246 @@ body{
     
 }
 .navbar ul li a {
-    color: rgb(1, 110, 182);
-    font-size: 15px;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
     text-decoration: none;
     transition: 0.2s;
     cursor: default;
 
 }
 .navbar ul li a:hover{
-    color:rgb(135, 252, 246);
-    text-shadow: 0 0 2px rgb(135, 255, 249), 0 0 8px rgb(135, 255, 249);
-    font-size: 18px;
+    color:rgb(133, 241, 255);
+    text-shadow: 0 0 2px rgb(133, 241, 255), 0 0 8px rgb(133, 241, 255);
+    font-size: 26px;
 }
 
-.icon {
+.h{
     position: absolute;
-    top: 100px;
+    top: 170px;
+    color: white;
+    left: 100px;
+    font-size: 20px;
+}
+.booking {
+    position: relative;
+    border: 2px solid;
+    margin: auto;
+    width: 70%;
+    padding: 20px;
+    border-radius: 15px;
+    top: 50px;
+    /* background-color: hsl(223, 95%, 68%) */
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.6); 
+    color: white;
+}
+.trip{
+    position: absolute;
+    float: left;
+    top: 25%;
+}
 
+.ahh{
+    position: absolute;
+    right: 2%;
+    top: 25%;
+    float: right;
+}
+
+.bookingTable {
+    margin: auto;
+    width: 70%;
+    margin-top: 20px;
+    background-color: aqua;
+
+}
+
+.bookingTable table {
+    width: 100%;
+    height: 100px;
+
+}
+.bookingTable th, td {
+    border: 1px solid black;
+    border-radius: 10px;
+  }
+
+.fareType {
+    position: relative;
+    margin: auto;
+    width: 70%;   
+    top: 110px;
+}
+.fareType table {
+    width: 100%;
 }
 
 .container {
-    position: absolute;
-    display: flex;
+    position: relative;
+    width: 350px;
+    height: 400px;
     justify-content: center;
+    display: flex;
     align-items: center;
-    width: 50%;
-    height: 50%;
-    background-color: aqua;
-    top: 20%;
+    margin-left: 1000px;
+    top: 80px;
+    border-radius: 25%;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.2); 
+    color: white;
+}
+.inputbox {
+    position: relative;
+    margin-top: 10px;
+    margin-left: 30px;
+    width: 300px;
+    height: 60px;
+    border-radius: 20%;
+}
+
+
+.inputbox label {
+    position: absolute;
+    top: 70%;
+    left: 10px;
+    transform: translateY(-5%);
+    color: white;
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s;
+
+
+}
+
+#date {
+    position: absolute;
+
+}
+
+input:focus ~ label,
+input:valid ~ label{
+    top: -1px;
+}
+
+.inputbox input {
+    width: 80%;
+    height: 60px;
+    border: solid;
+    border-color: black ;
+    border-top-right-radius: 80px;
+    font-size: 1em;
+    padding: 0 10px 0 30px;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.4); 
+    color: white;
+    
+}
+
+.inputbox ion-icon {
+    position: absolute;
+    right: 8px;
+    color: white;
+    font-size: 1.5em;
+    top: 20px;
+}
+
+.fareButton {
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.6); 
+    color: white;
+    
+}
+
+.anitext {
+    position: absolute;
+    top: 200px;
+    left: 630px;
+    width: 30%;
+    height: 50px;
+    font-size: 40px;
+    color: white;
+}
+
+#element {
+    font-size: 40px;
+}
+
+.personalInfo {
+    position: absolute;
+    top: 225px;
+    margin-left: 100px;
+    height: 400px;
+    width: 500px;
+    font-size: 25px;
+    border: solid;
+    border-color: black;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.5);
+    color: white;
+}
+
+.inputboxInfo{
+    width: 90%;
+    height: 60px;
+}
+
+.inputboxInfo input{
+    float: right;
+    height: 30px;
+    width: 200px;
+    border-top-right-radius: 80px;
+    border: solid;
+    border-color: black;
+}
+
+.info {
+    margin-top: 35px;
+    margin-left: 40px;
+}
+
+.social {
+    margin-top: 5px;
+    width: 100px;
+    float: right;
+}
+
+
+
+.trademark {
+    width: 15%;
+    float: left;
+    font-size: 20px;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.footcontact {
+    width: 1460px;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 30px;
+    text-indent: 100px;
+    word-spacing: 200px;
+    text-decoration: none;
+    text-decoration-color: none;
+}
+
+.footer {
+    width: 100%;
+    height:115px;
+    background-color: gray;
+}
+
+.link {
+    width: 100%;
+    height: 27px;
+    background-color: #333;
+}
+
+footer {
+    position: absolute;
+    margin-top: 125px;
+
 }
