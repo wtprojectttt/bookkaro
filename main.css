@@ -345,7 +345,7 @@ body{
 
 .us {
 
-    margin-top: 1000px;
+    margin-top: 1500px;
     background-color: #333;
     color: #fff;
     text-align: center;
@@ -574,4 +574,62 @@ p {
     margin-top: 210px;
     margin-left: 10px;
     font-weight: 700;
+}
+
+.gift1 {
+    position: absolute;
+    margin-top: 1000px;
+    width: 500px;
+    height: 200px;
+    background-color: aqua;
+    left: 200px;
+    border-radius: 30px;
+    box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.gift1 img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+
+.gift2 {
+    position: absolute;
+    margin-top: 1000px;
+    width: 500px;
+    height: 200px;
+    background-color: aqua;
+    right: 200px;
+    border-radius: 30px;
+    box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.gift2 img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+
+.gift3 {
+    position: absolute;
+    margin-top: 1250px;
+    width: 500px;
+    height: 200px;
+    background-color: aqua;
+    left: 525px;   
+    border-radius: 30px;
+    box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.gift3 img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+
+.social {
+    float: right;
 }
