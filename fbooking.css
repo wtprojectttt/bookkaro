@@ -24,11 +24,10 @@
 }
 
 body{
-    /* background-color: rgb(91, 241, 247);     */
+    min-height: 100vh;
+    padding: 0px;
     margin: 0;
-    padding: auto;
-    /* background-image: url(bg.jpeg); */
-    
+    background: linear-gradient(115deg, #98e7e7 10%, #150d8d 90%);
 }
 
 #tmain {
