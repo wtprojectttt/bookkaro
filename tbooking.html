@@ -7,11 +7,12 @@
     <link rel="stylesheet" href="tbooking.css">
 </head>
 <body>
-
-    <div class="backgroundimg"><img src="station.jpg" alt="station" height="100%" width="100%" ></div>
+    <div class="backgroundimg">
+        <img src="station.jpg" height="100%" width="55%">
+    </div>
     <div class="header">
             <div class="logo">
-                <img src="logo.png" alt="logo" height="130" width="130" usemap="mlogo" id="mlogo">
+                <img src="logo.png" alt="logo" height="130px" width="130px" id="mlogo">
             </div>
             <div class="title">
                 <a href="main.html" id="tmain">
@@ -29,88 +30,97 @@
             </ul>
             </div>
     </div>
-    <div class="booking">
-        <div class="trip">
-            <input type="radio" class="buttonTrip" name="tripType" value="oneWay">
-            <label>General</label>
-            <input type="radio" class="buttonTrip" name="tripType" value="round">
-            <label>Tatkal</label>
-            <input type="radio" class="buttonTrip" name="tripType" value="Multi">
-            <label>Duty Pass</label>
+
+        <div class="booking">
+            <div class="trip">
+                <input type="radio" class="buttonTrip" name="tripType" value="oneWay">
+                <label>General</label>
+                <input type="radio" class="buttonTrip" name="tripType" value="round">
+                <label>Tatkal</label>
+                <input type="radio" class="buttonTrip" name="tripType" value="Multi">
+                <label>Duty-Pass</label>
+            </div>
+            <div class="ahh">
+                <p>Book your Train ticket type</p>
+            </div>
         </div>
-        <div class="ahh">
-            <p>Book your Train ticket type</p>
+
+        <div class="anitext">
+            BookKaro &
+            <span id="element"></span>
         </div>
-    </div>
-
-    <div class="anitext">
-        Travel &
-        <span id="element"></span>
-    </div>
-
-    <div class="personalInfo">
-
-        <form action="index.php" method="post" enctype="multipart/form-data">
     
-            <label for="Fname">First Name:</label><br>
-            <input type="text" placeholder="squidwards" id="Username" minlength="6" maxlength="20" required><br>
-            
-            <label for="Lname">Last Name:</label><br>
-            <input type="text" placeholder="squidwards" id="Username" minlength="6" maxlength="20" required><br>
-            
-            <label for="bday">Birthday:</label><br>
-            <input type="date" id="bday"> <br>
+        <div class="personalInfo">
 
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" placeholder="Spongebob@squarepants.com" required><br>
-                
-            <label for="phone">Phone #</label><br>
-            <input type="tel" id="phone"  placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
-             
-            <label for="quantity">Number of passenger</label><br>
-            <input type="number" id="quantity" min="0" max="99" value="1"><br> 
-        </form>
+            <div class="info">
+                <div class="inputboxInfo">
+                    <label for="">First Name</label>
+                    <input type="text" required>
+                </div>
+                <div class="inputboxInfo">
+                    <label for="">Last Name</label>
+                    <input type="text" required>
+                </div>
+                <div class="inputboxInfo">
+                    <label for="">Date of Birth</label>
+                    <input type="date" required>
+                </div>
+                <div class="inputboxInfo">
+                    <label for="">Email</label>
+                    <input type="email" required>
+                </div>
+                <div class="inputboxInfo">
+                    <label for="">Contact Number</label>
+                    <input type="number" required>
+                </div>
+                <div class="inputboxInfo">
+                    <label for="">No of Passengers</label>
+                    <input type="number" required>
+                </div>
+            </div>
+           
 
-    </div>
+        </div>
 
-    <div class="container">
-        <div class="login-box">
-            <div class="inputbox">
-                <input type="text" required>
-                <label for="">Form</label>
-            </div>
-            <div class="inputbox">
-                <input type="text" required>
-                <label for="">TO</label>
-            </div>
-            <div class="inputbox">
-                <input type="date" required>
-                <label for="">Boarding Date</label>
-            </div>
-            <div class="inputbox">
-                <input type="text" required>
-                <label for="">Class</label>
+        <div class="container">
+            <div class="login-box">
+                <div class="inputbox">
+                    <input type="text" required>
+                    <label for="">Form</label>
+                </div>
+                <div class="inputbox">
+                    <input type="text" required>
+                    <label for="">TO</label>
+                </div>
+                <div class="inputbox">
+                    <input type="date" required>
+                    <label for="">Boarding Date</label>
+                </div>
+                <div class="inputbox">
+                    <input type="text" required>
+                    <label for="">Class</label>
+                </div>
             </div>
         </div>
-    </div>
-    <br>
-    <div class="fareType">
-        Select a Coach Type:
-        <table id="table">
-            <td class="fareButton"><input type="radio" name="fare" value="Regular">
-            <label>First class AC(1A)</label></td>
-            <td class="fareButton"><input type="radio" name="fare" value="Armed">
-            <label>AC 2 Tier (2A) </label></td>
-            <td class="fareButton"><input type="radio" name="fare" value="Student">
-            <label>AC 3 Tier (3A)</label></td>
-            <td class="fareButton"><input type="radio" name="fare" value="Senior">
-            <label>AC 3 Economy (3E)</label></td>
-            <td class="fareButton"><input type="radio" name="fare" value="Medical">
-            <label>AC Chair Car (CC)</label></td>
-            <td class="fareButton"><input type="radio" name="fare" value="Double">
-            <label>Sleeper (SL)</label></td>
-        </table>
-    </div>
+        <br>
+        <div class="fareType">
+            Select a Fare Type:
+            <table id="table">
+                <td class="fareButton"><input type="radio" name="fare" value="Regular">
+                <label>AC First Class(1A)</label></td>
+                <td class="fareButton"><input type="radio" name="fare" value="Armed">
+                <label></label></td>
+                <td class="fareButton"><input type="radio" name="fare" value="Student">
+                <label>AC 2 Tier()2A</label></td>
+                <td class="fareButton"><input type="radio" name="fare" value="Senior">
+                <label>AC 3 Tier(3A)</label></td>
+                <td class="fareButton"><input type="radio" name="fare" value="Medical">
+                <label>AC 3 Tier Economy(3E)</label></td>
+                <td class="fareButton"><input type="radio" name="fare" value="Double">
+                <label>Sleeper(SL)</label></td>
+            </table>
+        </div>
+
     <script src="fbooking.js"></script>
     <script src="main.js"></script>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
@@ -121,5 +131,6 @@
             typeSpeed: 75,
             });
     </script>
+</body>
 </body>
 </html>
