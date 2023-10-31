@@ -194,14 +194,18 @@ form .form-row .textarea{
   height: 45px!important;
   width: 25%!important;
 }
+
 .submit-btn .input-data .inner{
   height: 100%;
   width: 300%;
   position: absolute;
+  left: -100%;
   background: -webkit-linear-gradient(right, #56d8e4, #9f01ea, #56d8e4, #9f01ea);
-
+  transition: all 0.4s;
 }
-
+.submit-btn .input-data:hover .inner{
+  left: 0;
+}
 .submit-btn .input-data input{
   background: none;
   border: none;
@@ -219,12 +223,89 @@ form .form-row .textarea{
   position: absolute;
   left: 0%;
   top: 530px;
-  height: 120px;
+  height: 140px;
   width: 800px;
   color: #000000;
   background: #fff;
+  border-bottom-left-radius: 50px;
+  border-top-right-radius: 50px;
 }
 
 .also ul{
-  
+  top: 15px;
+  position: relative;
+  list-style: none;
+  left: 15px;
 }
+.also h2 {
+  font-family: 'Poppins', sans-serif;
+  background: -webkit-linear-gradient(right, #56d8e4, #9f01ea, #56d8e4, #9f01ea);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  top: 15px;
+  position: relative;
+  left: 15px;
+}
+.also p {
+  top: 15px;
+  position: relative;
+  left: 15px;
+}
+.add{
+  position: absolute;
+  height: 165px;
+  width: 380px;
+  background: #fff;
+  top: 700px;
+  left: 0%;
+  border-bottom-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+
+
+.add h2{
+  font-family: 'Poppins', sans-serif;
+  background: -webkit-linear-gradient(right, #56d8e4, #9f01ea, #56d8e4, #9f01ea);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  left: 20px;
+  top: 10px;
+}
+.add p{
+  position: relative;
+  left: 20px;
+  top: 10px;
+}
+.add address{
+  position: relative;
+  left: 20px;
+  top: 10px;
+}
+
+.busi{
+  position: absolute;
+  height: 165px;
+  width: 390px;
+  top: 700px;
+  left: 51%;
+  background: #fff;
+  border-bottom-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+  
+.busi h2{
+  font-family: 'Poppins', sans-serif;
+  background: -webkit-linear-gradient(right, #56d8e4, #9f01ea, #56d8e4, #9f01ea);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  left: 20px;
+  top: 10px;
+}
+.busi p{
+  position: relative;
+  left: 20px;
+  top: 10px;
+}
+
