@@ -163,6 +163,9 @@ body{
 .plane{ 
     position: absolute;
     right: 100px;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+    border-radius: 20px;
+    border: 1px gray solid;
 }
 
 .trainn{
@@ -187,6 +190,9 @@ body{
 .train{
     position: absolute;
     left: 1000px;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+    border-radius: 20px;
+    border: 1px gray solid;
 }
 
 .buss{
@@ -211,6 +217,9 @@ body{
 .bus{
     position: absolute;
     right: 600px;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+    border-radius: 20px;
+    border: 1px gray solid;
 }
 
 .carr{
@@ -421,6 +430,8 @@ p {
     height: 50px;
     font-size: 60px;
     color: white; 
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+    border: 1px gray solid;
 }
 
 .emptyPlane {
@@ -456,11 +467,12 @@ p {
     height: 250px;
     margin-top: 60px;
     left: 30px;
-    border: #000000;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+    border: 1px gray solid;
     border-top-right-radius: 100px;
     border-bottom-left-radius: 100px;
     background: #fff;
-    box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    /* box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset; */
 }
 
 .goa img{
@@ -479,7 +491,8 @@ p {
     border-top-right-radius: 100px;
     border-bottom-left-radius: 100px;
     background: #fff;
-    box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+    border: 1px gray solid;
 }
 
 .kathmandu img{
@@ -497,7 +510,8 @@ p {
     border-top-right-radius: 100px;
     border-bottom-left-radius: 100px;
     background: #fff;
-    box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+    border: 1px gray solid;
 }
 
 .cochin img{
@@ -515,7 +529,8 @@ p {
     border-top-right-radius: 100px;
     border-bottom-left-radius: 100px;
     background: #fff;
-    box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+    border: 1px gray solid;
 }
 
 .colombo img{
@@ -533,7 +548,8 @@ p {
     border-top-right-radius: 100px;
     border-bottom-left-radius: 100px;
     background: #fff;
-    box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+    border: 1px gray solid;
 }
 
 .zurich img{
@@ -551,9 +567,9 @@ p {
     border-top-right-radius: 100px;
     border-bottom-left-radius: 100px;
     background: #fff;
-    box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+    border: 1px gray solid;
 }
-
 .mauritius img{
     width: 280px;
     height: 250px;
