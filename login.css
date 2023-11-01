@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=poppins');
+@import url('https://fonts.googleapis.com/css?family=Zilla Slab');
 
 * {
     
@@ -100,6 +100,9 @@ section {
     justify-content: center;
     align-items: center;
     background-color: lavender;
+    border: 1px gray solid;
+    border-radius: 20px;
+    box-shadow: rgba(45, 35, 66, 0.8) 0 2px 4px,rgba(45, 35, 66, 0.6) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
 }
 
 h3 {
@@ -239,10 +242,9 @@ button {
 }
 
 .footer {
-    margin-top: -17px;
     width: 100%;
-    height:98px;
-    background-color: gray;
+    height:115px;
+    background-color: rgb(191, 191, 219);
     border: solid;
     border-color: black ;
 }
@@ -250,5 +252,9 @@ button {
 .link {
     width: 100%;
     height: 27px;
-    background-color: #333;
+    background-color: lavender;
+}
+
+footer {
+    margin-top: -17px;
 }
