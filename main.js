@@ -1,5 +1,5 @@
 document.getElementById('mlogo').addEventListener('click', () =>{
-    window.location.href = ('main.html');
+    window.location.href = ('index.html');
 })
 
 document.getElementById('planeB').addEventListener('click', () =>{
