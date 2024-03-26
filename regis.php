@@ -34,13 +34,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($conn->query($sql) === TRUE) {
         // Registration successful
-        echo "User registered successfully";
+        header("Location: login.html");
 
-        // Additional steps for sending one-time password to email
-        // Here, you would generate a random one-time password and send it to the user's email
-        // You'll need to integrate with an email service (e.g., SMTP) for this functionality
-
-        // Close database connection
         $conn->close();
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;
