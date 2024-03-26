@@ -8,27 +8,28 @@
     <link rel="icon" type="image/png" href="logo.png">
 </head>
 <body>
-    <div class="backgroundimg"></div>
-    <div class="header">
-            <div class="logo">
-                <img src="logo.png" alt="logo" height="110px" width="110px" id="mlogo">
-            </div>
-            <div class="title">
-                <a href="index.html" id="tmain">
-                    <h1>BOOK KARO</h1>
-                    <h2>TOUR and TRAVEL</h2>
-                </a>
-            </div>
 
-            <div class="navbar">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index.html#section-us">About</a></li>
-                <li><a href="contact.html">Contact </a></li>
-                <li><a href="login.html">Register/Login</a></li>
-            </ul>
-            </div>
-    </div>
+    <div class="backgroundimg"></div>
+        <div class="header">
+                <div class="logo">
+                    <img src="logo.png" alt="logo" height="110px" width="110px" id="mlogo">
+                </div>
+                <div class="title">
+                    <a href="index.html" id="tmain">
+                        <h1>BOOK KARO</h1>
+                        <h2>TOUR and TRAVEL</h2>
+                    </a>
+                </div>
+
+                <div class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#section-us">About</a></li>
+                    <li><a href="contact.html">Contact </a></li>
+                    <li><a href="login.html">Register/Login</a></li>
+                </ul>
+                </div>
+        </div>
 
         <div class="booking">
             <div class="trip">
@@ -49,82 +50,87 @@
             <span id="element"></span>
         </div>
 
-        <div class="botton">
-            <a href="fbooking.html" style="text-decoration: none;">    
-            <button class="button0" role="button">Book Now</button>
-            </a>
-        </div>
+      
         
         <div class="personalInfo">
-
             <div class="info">
-                <div class="inputboxInfo">
-                    <label for="">First Name</label>
-                    <input type="text" required>
-                </div>
-                <div class="inputboxInfo">
-                    <label for="">Last Name</label>
-                    <input type="text" required>
-                </div>
-                <div class="inputboxInfo">
-                    <label for="">Date of Birth</label>
-                    <input type="date" required>
-                </div>
-                <div class="inputboxInfo">
-                    <label for="">Email</label>
-                    <input type="email" required>
-                </div>
-                <div class="inputboxInfo">
-                    <label for="">Contact Number</label>
-                    <input type="number" required>
-                </div>
-                <div class="inputboxInfo">
-                    <label for="">No of Passengers</label>
-                    <input type="number" required min="0" max="6">
-                </div>
-            </div>
-           
-
-        </div>
-
-        <div class="container">
-            <div class="login-box">
-                <div class="inputbox">
-                    <input type="text" required>
-                    <label for="">Form</label>
-                </div>
-                <div class="inputbox">
-                    <input type="text" required>
-                    <label for="">TO</label>
-                </div>
-                <div class="inputbox">
-                    <input type="date" required>
-                    <label for="">Boarding Date</label>
-                </div>
-                <div class="inputbox">
-                    <input type="text" required>
-                    <label for="">Class</label>
-                </div>
+                <form action="fbooking.php" method="post">
+                    <div class="inputboxInfo">
+                        <label for="first_name">First Name</label>
+                        <input type="text" name="first_name" id="first_name" required>
+                    </div>
+                    <div class="inputboxInfo">
+                        <label for="last_name">Last Name</label>
+                        <input type="text" name="last_name" id="last_name" required>
+                    </div>
+                    <div class="inputboxInfo">
+                        <label for="date_of_birth">Date of Birth</label>
+                        <input type="date" name="date_of_birth" id="date_of_birth" required>
+                    </div>
+                    <div class="inputboxInfo">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <div class="inputboxInfo">
+                        <label for="contact_number">Contact Number</label>
+                        <input type="number" name="contact_number" id="contact_number" required>
+                    </div>
+                    <div class="inputboxInfo">
+                        <label for="num_passengers">No of Passengers</label>
+                        <input type="number" name="num_passengers" id="num_passengers" required min="0" max="6">
+                    </div>
             </div>
         </div>
-        <br>
-        <div class="fareType">
-            Select a Fare Type:
-            <table id="table">
-                <td class="fareButton"><input type="radio" name="fare" value="Regular">
-                <label>Regular Fares</label></td>
-                <td class="fareButton"><input type="radio" name="fare" value="Armed">
-                <label>Armed Forces Fares</label></td>
-                <td class="fareButton"><input type="radio" name="fare" value="Student">
-                <label>Student Fares</label></td>
-                <td class="fareButton"><input type="radio" name="fare" value="Senior">
-                <label>Senior Citizen Fares</label></td>
-                <td class="fareButton"><input type="radio" name="fare" value="Medical">
-                <label>Doctors & Nurses Fares</label></td>
-                <td class="fareButton"><input type="radio" name="fare" value="Double">
-                <label>Double Seat Fares</label></td>
-            </table>
-        </div>
+    </div>
+
+                    <div class="container">
+                        <div class="login-box">
+                            <div class="inputbox">
+                                <input type="text" name="from" required>
+                                <label for="from">Form</label>
+                            </div>
+                            <div class="inputbox">
+                                <input type="text" name="to" required>
+                                <label for="to">TO</label>
+                            </div>
+                            <div class="inputbox">
+                                <input type="date" name="boarding_date" required>
+                                <label for="boarding_date">Boarding Date</label>
+                            </div>
+                            <div class="inputbox">
+                                <input type="text" name="class" required>
+                                <label for="class">Class</label>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class="fareType">
+                        Select a Fare Type:
+                        <table id="table">
+                            <td class="fareButton"><input type="radio" name="fare" value="Regular">
+                            <label for="Regular">Regular Fares</label></td>
+                            <td class="fareButton"><input type="radio" name="fare" value="Armed">
+                            <label for="Armed">Armed Forces Fares</label></td>
+                            <td class="fareButton"><input type="radio" name="fare" value="Student">
+                            <label for="Student">Student Fares</label></td>
+                            <td class="fareButton"><input type="radio" name="fare" value="Senior">
+                            <label for="Senior">Senior Citizen Fares</label></td>
+                            <td class="fareButton"><input type="radio" name="fare" value="Medical">
+                            <label for="Medical">Doctors & Nurses Fares</label></td>
+                            <td class="fareButton"><input type="radio" name="fare" value="Double">
+                            <label for="Double">Double Seat Fares</label></td>
+                        </table>
+                    </div>
+
+                    <div class="botton">
+                        <a href="fbooking.html" style="text-decoration: none;">    
+                        <button class="button0" role="button">Book Now</button>
+                        </a>
+                    </div>
+
+                </form>
+
 
         <footer class="footer">
 
