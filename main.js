@@ -17,3 +17,12 @@ document.getElementById('trainB').addEventListener('click', () =>{
 document.getElementById('carB').addEventListener('click', () =>{
     window.location.href = ('cbooking.html');
 })
+
+function togglePassword() {
+    var passwordInput = document.getElementById("password");
+    if (passwordInput.type === "password") {
+        passwordInput.type = "text";
+    } else {
+        passwordInput.type = "password";
+    }
+}

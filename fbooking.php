@@ -32,12 +32,39 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             VALUES ('$first_name', '$last_name', '$date_of_birth', '$email', '$contact_number', '$num_passengers', '$from', '$to', '$boarding_date', '$class', '$fare')";
 
     if ($conn->query($sql) === TRUE) {
-        echo "New record created successfully";
+
+            // Prepare SQL statement
+            $sql = "SELECT * FROM booking WHERE first_name=? AND email=?";
+            $stmt = $conn->prepare($sql);
+
+            // Bind parameters
+            $stmt->bind_param("ss", $first_name, $email);
+
+            // Execute query
+            $stmt->execute();
+
+            // Get result
+            $result = $stmt->get_result();
+
+            // Check if there are any rows in the result
+            if ($result->num_rows > 0) {
+                // Output data of each row
+                while ($row = $result->fetch_assoc()) {
+                    echo "<p>First Name: " . $row["first_name"] . " - Last Name: " . $row["last_name"] . " - Email: " . $row["email"] . " - Contact Number: " . $row["contact_number"] . " - Number of Passengers: " . $row["num_passengers"] . " - From: " . $row["from_location"] . " - To: " . $row["to_location"] . " - Boarding Date: " . $row["boarding_date"] . " - Class: " . $row["class"] . " - Fare Type: " . $row["fare_type"] . "</p>";
+                }
+            } else {
+                echo "0 results";
+            }
+
+            // Close statement and database connection
+            $stmt->close();
+            $conn->close();
+
+
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;
+        $conn->close();
     }
 
-    // Close database connection
-    $conn->close();
 }
 ?>

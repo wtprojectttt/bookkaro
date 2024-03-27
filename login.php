@@ -29,7 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         if (password_verify($password, $hashed_password)) {
             // Password is correct, login successful
-            echo "Login successful";
+            header("Location: fbooking.html");
             // You can perform additional actions here, such as setting session variables for the user
         } else {
             // Incorrect password
