@@ -53,39 +53,44 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     // echo "<p>First Name: " . $row["first_name"] . " - Last Name: " . $row["last_name"] . " - Email: " . $row["email"] . " - Contact Number: " . $row["contact_number"] . " - Number of Passengers: " . $row["num_passengers"] . " - From: " . $row["from_location"] . " - To: " . $row["to_location"] . " - Boarding Date: " . $row["boarding_date"] . " - Class: " . $row["class"] . " - Fare Type: " . $row["fare_type"] . "</p>";
              
                     echo "<style>
-                            .ticket {
-                                border: 2px solid #333;
+                            *{
+                                margin: 0;
+                                padding: 0;
+                            }
+                            
+                            body{
+                                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                background: linear-gradient(115deg, #56d8e4 10%, #9f01ea 90%);
+                                min-height: 100vh;
+                            }
+                            
+                            .ticket{
+                                /* padding: 20px; */
+                                width: 80%;
+                                box-shadow: 0 .4rem .8rem #0005;
+                                background-color: white;
                                 border-radius: 10px;
-                                padding: 20px;
-                                margin: 20px auto;
-                                max-width: 400px;
-                                background-color: #f9f9f9;
-                                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
                             }
                             
-                            h2 {
-                                text-align: center;
-                                margin-bottom: 10px;
-                            }
+                            .userd{
+                                border-right-style: dashed;
+                                border-width: 2px;
                             
-                            .user-details, .flight-details {
-                                margin-bottom: 15px;
-                            }
-                            
-                            .user-details p, .flight-details p {
-                                margin: 5px 0;
-                            }
-                            
-                            .user-details strong, .flight-details strong {
-                                font-weight: bold;
-                            }
+                            }                    
                         </style>";
-
-                        // Your PHP code to echo the user details here
+                    
+                    echo "<link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css' rel='stylesheet'>";
+                    echo "<script src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js'></script>";
 
                         echo "<div class='ticket'>";
                         echo "<h2>Flight Ticket</h2>";
-                        echo "<div class='user-details'>";
+                        echo "<div class='col-sm-4 p-3 userd'>";
                         echo "<p><strong>Passenger Details:</strong></p>";
                         echo "<p><strong>First Name:</strong> " . $row["first_name"] . "</p>";
                         echo "<p><strong>Last Name:</strong> " . $row["last_name"] . "</p>";
@@ -93,7 +98,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         echo "<p><strong>Contact Number:</strong> " . $row["contact_number"] . "</p>";
                         echo "<p><strong>Number of Passengers:</strong> " . $row["num_passengers"] . "</p>";
                         echo "</div>";
-                        echo "<div class='flight-details'>";
+                        echo "<div class='col-sm-4 p-3 flightd'>";
                         echo "<p><strong>Flight Details:</strong></p>";
                         echo "<p><strong>From:</strong> " . $row["from_location"] . "</p>";
                         echo "<p><strong>To:</strong> " . $row["to_location"] . "</p>";
