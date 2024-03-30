@@ -6,19 +6,23 @@ $(document).ready(function () {
         });
     });
 
-    let table;
+   
 
-    table=$("table").DataTable({
-        pageLength : 13,
-        colReader: true,
-        columns : columns,
-        data: data
+    $("tbody tr").on("click",function (){
+        var currow=$(this).closest("tr");
 
+        var col1=currow.find("td:eq(1)").text();
+        var col2=currow.find("td:eq(2)").text();
+        var col3=currow.find("td:eq(3)").text();
+        var col4=currow.find("td:eq(4)").text();
+        var col5=currow.find("td:eq(5)").text();
 
-    });
+        localStorage.setItem('col1',col1);
+        localStorage.setItem('col2',col2);
+        localStorage.setItem('col3',col3);
+        localStorage.setItem('col4',col4);
+        localStorage.setItem('col5',col5);
 
-    $("table").on("click","tbody tr",function (){
-        const ro = table.row().data();
-        console.log(ro);
+        window.location.href = "fbooking.html";
     });
 });

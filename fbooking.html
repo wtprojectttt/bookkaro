@@ -86,15 +86,15 @@
                     <div class="container">
                         <div class="login-box">
                             <div class="inputbox">
-                                <input type="text" name="from" required>
+                                <input type="text" name="from" id="from" required>
                                 <label for="from">Form</label>
                             </div>
                             <div class="inputbox">
-                                <input type="text" name="to" required>
+                                <input type="text" name="to" id="to" required>
                                 <label for="to">TO</label>
                             </div>
                             <div class="inputbox">
-                                <input type="date" name="boarding_date" required>
+                                <input type="date" name="boarding_date" id="date" required>
                                 <label for="boarding_date">Boarding Date</label>
                             </div>
                             <div class="inputbox">
@@ -170,6 +170,18 @@
             '<bold>Travel</bold>', '<bold>Relax</bold>','<bold>Enjoy</bold>','<bold>Chill</bold>','<bold>Live</bold>','<bold>Travel</bold>', '<bold>Relax</bold>','<bold>Enjoy</bold>','<bold>Chill</bold>','<bold>Live</bold>'],
             typeSpeed: 75,
             });
+    </script>
+    <script>
+        col1=localStorage.getItem("col1");
+        console.log(col1);
+        document.getElementById("from").value = col1;
+
+        col2=localStorage.getItem("col2");
+        document.getElementById("to").value = col2;
+
+        col3=localStorage.getItem("col3");
+        document.getElementById("date").value = col3;
+
     </script>
 </body>
 </body>
