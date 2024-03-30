@@ -86,7 +86,7 @@
                     <div class="container">
                         <div class="login-box">
                             <div class="inputbox">
-                                <input type="text" name="from" id="from" required>
+                                <input type="text" name="from" id="from" required  >
                                 <label for="from">Form</label>
                             </div>
                             <div class="inputbox">
@@ -180,7 +180,35 @@
         document.getElementById("to").value = col2;
 
         col3=localStorage.getItem("col3");
-        document.getElementById("date").value = col3;
+        console.log(col3)
+        var y=col3.slice(9,13);
+        var d=col3.slice(1,3);
+        var m=col3.slice(4,7);
+        if (m=="May"){
+            m="05";
+        }
+        else if (m=="Feb"){
+            m="02";
+        }
+        else if (m=="Aug"){
+            m="08";
+        }
+        else if (m=="Mar"){
+            m="03";
+        }
+        else if (m=="Apr"){
+            m="04";
+        }
+        else if (m=="Dec"){
+            m="01";
+        }
+        else if (m=="Oct"){
+            m="10";
+        }
+        
+        console.log(m)
+
+        document.getElementById("date").value = y+"-"+m+"-"+d;
 
     </script>
 </body>
