@@ -33,7 +33,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             // You can perform additional actions here, such as setting session variables for the user
         } else {
             // Incorrect password
-            echo "Incorrect password";
+            echo "<script>alert('Incorrect Password');</script>";
         }
     } else {
         // User not found
