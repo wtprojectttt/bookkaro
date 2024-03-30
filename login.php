@@ -37,7 +37,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
     } else {
         // User not found
-        echo "User not found";
+        echo "<script>alert('User not found');</script>";
     }
 
     // Close database connection
