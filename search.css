@@ -21,6 +21,7 @@ body {
 }
 
 header{ 
+    position: relative;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -53,7 +54,7 @@ header{
 
 .logo a h1{
     font-size:35px;
-    color:  rgb(134, 36, 36);
+    color:  rgb(255, 255, 255);
 }
 
 .logo a h2{
@@ -62,8 +63,8 @@ header{
 }
 
 .navbar{
-   
-    top: 0px;
+    position: relative;
+    top: -40px;
     right: 0px;
     display: flex;
     justify-content: right;
@@ -74,7 +75,6 @@ header{
     display: inline;
     justify-content: center;
     align-items: center;
-   
 }
 
 .navbar ul li {
