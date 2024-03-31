@@ -135,6 +135,11 @@ body{
     filter: blur(2px);
     -webkit-filter: blur(2px);
 }
+
+i {
+    margin: 5px;
+    font-size: 24px;
+}
 .icon {
     position: relative;
     height: 800px;

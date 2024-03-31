@@ -1,51 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
     <title>BookKaro.com</title>
     <link rel="icon" type="image/png" href="logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
+
 <body>
     <header>
 
-    <div class="container">
-        <img src="bg.jpg" alt="bg" height="750px" width="100%" id="bg">
-        <div class="center2">Explore the Colourful World</div>
-        <div class="center">AT YOUR IDEAL</div>
-        <div class="center1"> TRAVEL COST</div>
-        <div class="logo">
-            <img src="logo.png" alt="logo" height="110" width="110" usemap="mlogo" id="mlogo">
+        <div class="container">
+            <img src="bg.jpg" alt="bg" height="750px" width="100%" id="bg">
+            <div class="center2">Explore the Colourful World</div>
+            <div class="center">AT YOUR IDEAL</div>
+            <div class="center1"> TRAVEL COST</div>
+            <div class="logo">
+                <img src="logo.png" alt="logo" height="110" width="110" usemap="mlogo" id="mlogo">
+            </div>
+            <div class="title">
+                <a href="index.html" id="tmain">
+                    <h1>BOOK KARO</h1>
+                    <h2>TOUR and TRAVEL</h2>
+                </a>
+            </div>
         </div>
-        <div class="title">
-            <a href="index.html" id="tmain">
-                <h1>BOOK KARO</h1>
-                <h2>TOUR and TRAVEL</h2>
-            </a>
+
+        <div class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#section-us">About</a></li>
+                <li><a href="contact.html">Contact </a></li>
+                <li><a href="login.html">Register/Login</a></li>
+            </ul>
         </div>
-    </div>
-    
-    <div class="navbar">
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="#section-us">About</a></li>
-        <li><a href="contact.html">Contact </a></li>
-        <li><a href="login.html">Register/Login</a></li>
-    </ul>
-    </div>
     </header>
 
     <div class="anitext">
         <span> BookKaro & </span>
-         <span id="element"></span>
-     </div>
-    
-     <div class="bookingbg"></div>
+        <span id="element"></span>
+    </div>
+
+    <div class="bookingbg"></div>
     <div class="icon">
         <div class="offer">
-            
+
             <section id="booknow"></section>
             <div class="flightt">
                 <div class="offer1" id="1offer">
@@ -54,12 +57,12 @@
                         compare and book flight with more flexibility
                     </p><br><br><br>
                     <div class="botton">
-                        <a href="fbooking.html" style="text-decoration: none;">    
-                        <button class="button0" role="button">Book Now</button>
+                        <a href="fbooking.html" style="text-decoration: none;">
+                            <button class="button0" role="button">Book Now</button>
                         </a>
                     </div>
                 </div>
-                
+
                 <div class="emptyPlane">
                     <div class="plane">
                         <img src="plane.jpg" alt="plane" height="180px" width="180px" style="border-radius: 20px;">
@@ -83,7 +86,7 @@
                     </p><br><br><br>
                     <div class="botton">
                         <a href="serach.html" style="text-decoration: none;">
-                        <button class="button0" role="button">Search</button>
+                            <button class="button0" role="button"><i class="fa fa-search"></i>Search</button>
                         </a>
                     </div>
                 </div>
@@ -100,7 +103,7 @@
                     </div>
                 </div>
             </div>
-            
+
         </div>
     </div>
 
@@ -168,17 +171,21 @@
         </section>
 
     </main>
-        <header class="us">
-            <h1>About Us</h1>
-        </header>
+    <header class="us">
+        <h1>About Us</h1>
+    </header>
 
-   
-    
+
+
     <main>
         <section id="section-us" class="about">
             <h2>Our Story</h2>
-            <p>"Welcome to our travel booking site, where wanderlust meets convenience. We're passionate about crafting unforgettable journeys for our travelers. Our platform is designed to inspire, simplify, and elevate the travel experience. With a focus on seamless bookings, curated recommendations, and exceptional customer service, we're dedicated to helping you create memories that last a lifetime. Explore the world with confidence, supported by our expertise and commitment to making your travel dreams a reality."</p>
-         </section>
+            <p>"Welcome to our travel booking site, where wanderlust meets convenience. We're passionate about crafting
+                unforgettable journeys for our travelers. Our platform is designed to inspire, simplify, and elevate the
+                travel experience. With a focus on seamless bookings, curated recommendations, and exceptional customer
+                service, we're dedicated to helping you create memories that last a lifetime. Explore the world with
+                confidence, supported by our expertise and commitment to making your travel dreams a reality."</p>
+        </section>
         <section class="team">
             <h2>Our Team</h2>
             <div class="team-member">
@@ -223,49 +230,55 @@
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
         var typed = new Typed('#element', {
-            strings: ['<bold>Travel</bold>', '<bold>Relax</bold>','<bold>Enjoy</bold>','<bold>Chill</bold>','<bold>Live</bold>','<bold>Travel</bold>', '<bold>Relax</bold>','<bold>Enjoy</bold>','<bold>Chill</bold>','<bold>Live</bold>',
-            '<bold>Travel</bold>', '<bold>Relax</bold>','<bold>Enjoy</bold>','<bold>Chill</bold>','<bold>Live</bold>','<bold>Travel</bold>', '<bold>Relax</bold>','<bold>Enjoy</bold>','<bold>Chill</bold>','<bold>Live</bold>',
-            '<bold>Travel</bold>', '<bold>Relax</bold>','<bold>Enjoy</bold>','<bold>Chill</bold>','<bold>Live</bold>','<bold>Travel</bold>', '<bold>Relax</bold>','<bold>Enjoy</bold>','<bold>Chill</bold>','<bold>Live</bold>'],
+            strings: ['<bold>Travel</bold>', '<bold>Relax</bold>', '<bold>Enjoy</bold>', '<bold>Chill</bold>', '<bold>Live</bold>', '<bold>Travel</bold>', '<bold>Relax</bold>', '<bold>Enjoy</bold>', '<bold>Chill</bold>', '<bold>Live</bold>',
+                '<bold>Travel</bold>', '<bold>Relax</bold>', '<bold>Enjoy</bold>', '<bold>Chill</bold>', '<bold>Live</bold>', '<bold>Travel</bold>', '<bold>Relax</bold>', '<bold>Enjoy</bold>', '<bold>Chill</bold>', '<bold>Live</bold>',
+                '<bold>Travel</bold>', '<bold>Relax</bold>', '<bold>Enjoy</bold>', '<bold>Chill</bold>', '<bold>Live</bold>', '<bold>Travel</bold>', '<bold>Relax</bold>', '<bold>Enjoy</bold>', '<bold>Chill</bold>', '<bold>Live</bold>'],
             typeSpeed: 75,
-            });
+        });
     </script>
     <script>
-        $(".goa").on("click",function (){
-            var currow=$("#goa").text();
-            console.log(currow);
-            localStorage.setItem('col2',currow);
-            window.location.href = "fbooking.html";
-        });
-        $(".kathmandu").on("click",function (){
-            currow=$("#kath").text();
-            console.log(currow);
-            localStorage.setItem('col2',currow);
-            window.location.href = "fbooking.html";
-        });
-        $(".cochin").on("click",function (){
-            currow=$("#cock").text();
-            console.log(currow);
-            localStorage.setItem('col2',currow);
-            window.location.href = "fbooking.html";
-        });
-        $(".colombo").on("click",function (){
-            currow=$("#cola").text();
-            console.log(currow);
-            localStorage.setItem('col2',currow);
-            window.location.href = "fbooking.html";
-        });
-        $(".mauritius").on("click",function (){
-            currow=$("#mau").text();
-            console.log(currow);
-            localStorage.setItem('col2',currow);
-            window.location.href = "fbooking.html";
-        });
-        $(".zurich").on("click",function (){
-            currow=$("#zur").text();
-            console.log(currow);
-            localStorage.setItem('col2',currow);
-            window.location.href = "fbooking.html";
+        $(document).ready(function () {
+            $(".goa").on("click", function () {
+                var currow = $("#goa").text();
+                console.log(currow);
+                localStorage.setItem('col2', currow);
+                window.location.href = "fbooking.html";
+            });
+            $(".kathmandu").on("click", function () {
+                currow = $("#kath").text();
+                console.log(currow);
+                localStorage.setItem('col2', currow);
+                window.location.href = "fbooking.html";
+            });
+            $(".cochin").on("click", function () {
+                currow = $("#cock").text();
+                console.log(currow);
+                localStorage.setItem('col2', currow);
+                window.location.href = "fbooking.html";
+            });
+            $(".colombo").on("click", function () {
+                currow = $("#cola").text();
+                console.log(currow);
+                localStorage.setItem('col2', currow);
+                window.location.href = "fbooking.html";
+            });
+            $(".mauritius").on("click", function () {
+                currow = $("#mau").text();
+                console.log(currow);
+                localStorage.setItem('col2', currow);
+                window.location.href = "fbooking.html";
+            });
+            $(".zurich").on("click", function () {
+                currow = $("#zur").text();
+                console.log(currow);
+                localStorage.setItem('col2', currow);
+                window.location.href = "fbooking.html";
+            });
+            $("#trainB").on("click", function () {
+                window.location.href = "serach.html";
+            });
         });
     </script>
 </body>
+
 </html>

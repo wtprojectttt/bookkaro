@@ -11,7 +11,7 @@ document.getElementById('busB').addEventListener('click', () =>{
 })
 
 document.getElementById('trainB').addEventListener('click', () =>{
-    window.location.href = ('tbooking.html');
+    window.location.href = ('serach.html');
 })
 
 document.getElementById('carB').addEventListener('click', () =>{
