@@ -32,7 +32,6 @@ header{
 .logo{
     height: 8%;
     width: 40% ;
-    mix-blend-mode: multiply;
     display: flex;
     justify-content: left;
     align-items: center;
@@ -59,7 +58,7 @@ header{
 
 .logo a h2{
     font-size:30px;
-    color: rgb(189, 34, 34);
+    color: rgb(255, 255, 255);
 }
 
 .navbar{

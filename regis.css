@@ -1,10 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Zilla Slab');
 *{
     margin: 0;
     padding: 0;
 }
 body {
-    font-family: Arial, sans-serif;
-    /* background-color: #782121; */
+    font-family: 'Zilla Slab';
     margin: 0;
     padding: 0;
     height: 100vh;
@@ -23,7 +23,6 @@ header{
 .logo{
     height: 8%;
     width: 40% ;
-    mix-blend-mode: multiply;
     display: flex;
     justify-content: left;
     align-items: center;
@@ -40,7 +39,7 @@ header{
 
 .logo a{
     text-decoration: none;
-    color: white;
+    /* color: white; */
 }
 
 h1{
@@ -48,7 +47,7 @@ h1{
     color:  rgb(255, 255, 255);
 }
 
-h2{
+.logo a h2{
     font-size:30px;
     color: rgb(255, 255, 255);
 }
@@ -94,7 +93,7 @@ h2{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 10vw;
+    width: 60vw;
     height: 60vh;
     background-color: #fff5;
     backdrop-filter: blur(7px);
@@ -109,6 +108,8 @@ form {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 20px;
     width: 90%;
+    /* height: 55vh; */
+
 }
 
 h2 {
