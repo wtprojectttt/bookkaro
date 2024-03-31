@@ -128,7 +128,7 @@ body{
 
 .bookingbg {
     position: absolute;
-    height: 800px;
+    height: 700px;
     width: 100%;
     right: 0;
     background-image: url(bookingbg.jpeg);
@@ -163,15 +163,17 @@ body{
     border-radius: 20px;
     background: #fff;
     box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
-    left: 720px;
+    left: 460px;
+    top: 30%;
 }
 
 .plane{ 
     position: absolute;
-    right: 100px;
+    right: 300px;
     border: 1px gray solid;
     border-radius: 20px;
     box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+    top: 30%;
 }
 
 .trainn{
@@ -192,67 +194,20 @@ body{
     background: white;
     box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
     right: 550px;
+    top: 50%;
 
 }
 
 .train{
     position: absolute;
-    left: 1000px;
+    left: 1060px;
     border: 1px gray solid;
     border-radius: 20px;
     box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+    top: 50%;
 }
 
-.buss{
-    position: absolute;
-    width: 100%;
-    top: 500px;
-}
 
-.offer3 {
-    position: absolute;
-    width:30%;
-    height: 170px;
-    padding: 10px;
-    /* margin: 10px; */
-    border: 1px gray solid;
-    border-radius: 20px;
-    background: white;
-    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
-    left: 200px;
-}
-
-.bus{
-    position: absolute;
-    right: 600px;
-    border: 1px gray solid;
-    border-radius: 20px;
-    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
-}
-
-.carr{
-    position: absolute;
-    width: 100%;
-    top: 620px;
-}
-
-.offer4 {
-    position: absolute;
-    /* top: 600px; */
-    width:30%;
-    height: 170px;
-    padding: 10px;
-    /* margin: 10px; */
-    border: 1px gray solid;
-    border-radius: 20px;
-    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
-}
-
-.cab{
-    position: absolute;
-    right: 20px;
-    /* top: 600px; */
-}
 
 .over{
     position: absolute;
@@ -280,7 +235,7 @@ body{
 .content2{
     position: absolute;
     top: 50%;
-    right: 10%;
+    right: 4%;
     transform: translate(-50%,-50%);
     color: rgb(255, 255, 255);
     text-align: center;
