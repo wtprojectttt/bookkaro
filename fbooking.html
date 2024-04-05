@@ -212,6 +212,11 @@
 
         document.getElementById("date").value = y+"-"+m+"-"+d;
 
+        $(window).on("load",function(){
+            if(performance.navigation.type === 1){
+            localStorage.clear();
+            }
+        });
     </script>
 </body>
 </body>
